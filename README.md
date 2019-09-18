@@ -1,20 +1,20 @@
 # Introduction about the Project
 
 # Roles of Team Members
-## Roles of each team member are specified as follows:
-### Researcher - _Dhwani_
-#### A researcher will hold the following responsibilities:
+Roles of each team member are specified as follows:
+## Researcher - _Dhwani_
+### A researcher will hold the following responsibilities:
 * Doing research on the project topic and the analytical methods
 * Writing documentation to direct the work of other team members
 
-### Technical Lead - _Tanishk Ranag_
-#### A technical lead will hold the following responsibilities:
+## Technical Lead - _Tanishk Ranag_
+### A technical lead will hold the following responsibilities:
 * Writing R scripts to conduct the statistical analysis
 * Determining the most appropriate way to analyze the dataset with the best of his knowledge
 * Analyzing and interpreting the data models
 
-### Proofreader - _Josephine Qiu_
-#### A proofreader will hold the following responsibilities:
+## Proofreader - _Josephine Qiu_
+### A proofreader will hold the following responsibilities:
 * Ensuring that wording of the documentations is grammatically correct
 * Assisting the researcher with researching 
 * Integrating the documents in an appropriate way
