@@ -1,7 +1,7 @@
 # Introduction about the Project
 
 # Role of Team Members
-Roles of each team member are specified as follows:
+*Roles of each team member are specified as follows:*
 ## Researcher - _Dhwani_
 ### A researcher will hold the following responsibilities:
 * Doing research on the project topic and the analytical methods
