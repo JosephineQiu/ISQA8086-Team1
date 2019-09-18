@@ -2,12 +2,13 @@
 
 # Roles of Team Members
 Roles of each team member are specified as follows:
-## Researcher - _Dhwani_
+## Researcher - _Dhwani Kumrawat_
 ### A researcher will hold the following responsibilities:
-* Doing research on the project topic and the analytical methods
-* Writing documentation to direct the work of other team members
+* Doing research on the project and analysing the collected data
+* Contact the Project provider for additional information
+* Writing documentation which will help other team members to understand the project
 
-## Technical Lead - _Tanishk Ranag_
+## Technical Lead - _Tanishk Ranga Reddy_
 ### A technical lead will hold the following responsibilities:
 * Writing R scripts to conduct the statistical analysis
 * Determining the most appropriate way to analyze the dataset with the best of his knowledge
