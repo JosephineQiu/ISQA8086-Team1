@@ -21,6 +21,20 @@ Roles of each team member are specified as follows:
 
 # Task Specification Per Timeline
 
+|  *Task* |*Due Date*   | *Task Type*     | *Time for Research*   | *Time for development*  | *Time for Proofreading*  |  *Time for updating Drafts*
+|---|---|---|---|---|---|---|
+| Work Plan  | Thu Sep 19, 2019  | Team     |2 days   |2 days   | 2 days  | 1 day  |
+| Background Research & RQs  | Thu Oct 3, 2019  | Team     |  2 days   |2 days   | 2 days  | 1 day  |
+| Audience Profile  | Thu Oct 17, 2019  | Team     | 2 days   |2 days   | 2 days  | 1 day  |
+| Data Cleaning  | Thu Oct 24, 2019  |  Team    |  2 days   |2 days   | 2 days  | 1 day  |
+| Progress Meeting  | Thu Oct 24, 2019  |  Team    | 2 days   |2 days   | 2 days  | 1 day  |
+| R Script  | Thu Nov 7, 2019  | Team     | 2 days   |2 days   | 2 days  | 1 day  |
+| R Plots  | Thu Nov 14, 2019  | Team     | 2 days   |2 days   | 2 days  | 1 day  |
+| Project Presentation  | Thu Dec 12, 2019  |  Team    |  2 days   |2 days   | 2 days  | 1 day  |
+| Git Repository  | Thu Dec 12, 2019  | Team     | 2 days   |2 days   | 2 days  | 1 day  |
+
+#### NOTE: *_Timeline may differ for some task as per the circumstances_*
+
 
 # Communication Agreement
 ## Mode of Contact for the Group as Primary Communications
