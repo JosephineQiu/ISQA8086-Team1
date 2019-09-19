@@ -1,4 +1,6 @@
 # Introduction about the Project
+  
+  Project is the study of cyclic and seasonal natural phenomena as how temperature affects the growth in plants. Working on 8 different species of plants in 110 acres os an island. The analysis will be more focused on the factor of temperature as of how the breaking of bud is affected by the temperature, mainly at the time of early spring. Temperature is recorded hourly by the "National Phenological Network" and stored and hence will be used in the study. End of the study report will be healthy enough to explain how different changes related to activities of a  growing plant/bud likely "Increase in the bud size", "presence and the participation of caterpillars", "Breaking of the bud"  is affected by the rise and fall of temperature.
 
 # Roles of Team Members
 Roles of each team member are specified as follows:
