@@ -22,7 +22,20 @@
 |---------------------------------------------|------------|----------|-----------|
 | Research on Client Needs and Interests      | Oct 6      | Oct 13   | Josephine |                       
 | Proofreading                                | Oct 14     | Oct 16   | Dhwani    |                       
-| Updates and Incorporation to Github Package | Oct 16     | Oct 17   | Tanishk   |                       
+| Updates and Incorporation to Github Package | Oct 16     | Oct 17   | Tanishk   |    
+
+## Data cleaning Documentation
+
+| TASK                                          | START DATE | DUE DATE | Assignee    |
+|-----------------------------------------------|------------|----------|-----------|
+| Detailed decription of each data source       | 24 oct     | 24 oct   | Team      |
+| Licenses                                      | 25 oct     | 25 oct   | Tanishk   |
+| Describing Metadata                           | 26 oct     | 26 oct   | Josephine |
+| Identifying issues with the data              | 27 oct     | 27 oct   | Dhwani    |
+| Explaining remediate values                   | 28 oct     | 28 oct   | Tanishk   |
+| Document supporting the data cleaning process | 29 oct     | 29 oct   | Team      |
+| The contributorship statement                 | 30 oct     | 30 oct   | Team      |
+| Proof reading                                 | 31 oct     | 31 oct   | Josephine |
 
 ## R Script
 
@@ -78,3 +91,5 @@ We will implement the following methods to deal with *late response*:
 * Phone calls will be made directly to the individuals not responding in a timely manner. 
 * In case of emergency issues happening to an individual, the other members will cover his/her part for timely submission. The situation will be reported directly to our supervisor/professor.
 
+## COntributorship Statement
+Dhwani Kumrawat, Josephine Qui, Ranga Tanishk Reddy have worked collectively to generate the documentation of this project work plan.
