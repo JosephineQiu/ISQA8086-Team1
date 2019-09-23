@@ -24,17 +24,15 @@ Roles of each team member are specified as follows:
 
 # Task Specification Per Timeline
 
-|  *Task* |*Due Date*   | *Task Type*     | *Time for Research*   | *Time for development*  | *Time for Proofreading*  |  *Time for updating Drafts*
-|---|---|---|---|---|---|---|
-| Work Plan  | Thu Sep 19, 2019  | Team     |2 days   |2 days   | 2 days  | 1 day  |
-| Background Research & RQs  | Thu Oct 3, 2019  | Team     |  2 days   |2 days   | 2 days  | 1 day  |
-| Audience Profile  | Thu Oct 17, 2019  | Team     | 2 days   |2 days   | 2 days  | 1 day  |
-| Data Cleaning  | Thu Oct 24, 2019  |  Team    |  2 days   |2 days   | 2 days  | 1 day  |
-| Progress Meeting  | Thu Oct 24, 2019  |  Team    | 2 days   |2 days   | 2 days  | 1 day  |
-| R Script  | Thu Nov 7, 2019  | Team     | 2 days   |2 days   | 2 days  | 1 day  |
-| R Plots  | Thu Nov 14, 2019  | Team     | 2 days   |2 days   | 2 days  | 1 day  |
-| Project Presentation  | Thu Dec 12, 2019  |  Team    |  2 days   |2 days   | 2 days  | 1 day  |
-| Git Repository  | Thu Dec 12, 2019  | Team     | 2 days   |2 days   | 2 days  | 1 day  |
+## Backgroung Research & RQs
+
+| Tasks                                           | Start date | Due Date | Assignee                 |
+|-------------------------------------------------|------------|----------|--------------------------|
+| Client organization and its mission and goals   | Sept 24    | Sept 28  | Josephine                |
+| Research Questions and the importance of them   | Sept 24    | Sept 27  | Dhwani                   |
+| The study organism / phenomenon                 | Sept 27    | Sept 29  | Tanishk                  |
+| Decisions, interventions & actions for analysis | Sept 29    | Oct 2    | Josephine/Dhwani/Tanishk |
+| Proofreading,updates and incorporation          | Oct 1      | Oct 2    | Josephine                |
 
 #### NOTE: *_Timeline may differ for some task as per the circumstances_*
 
