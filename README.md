@@ -13,7 +13,7 @@
 | Client organization and its mission and goals   | Sept 24    | Sept 28  | Josephine                |                            
 | Research Questions and the importance of them   | Sept 24    | Sept 27  | Dhwani                   |                            
 | The study organism / phenomenon                 | Sept 27    | Sept 29  | Tanishk                  |                            
-| Decisions, interventions & actions for analysis | Sept 29    | Oct 2    | Josephine/Dhwani/Tanishk |                            
+| Decisions, interventions & actions for analysis | Sept 29    | Oct 2    | Team                     |                            
 | Proofreading,updates and incorporation          | Oct 1      | Oct 2    | Josephine                |                            
 
 
@@ -31,7 +31,16 @@
 | Regression Analysis     | Oct 31     | Nov 2    | Dhwani             |                           
 | ANOVA                   | Nov 2      | Nov 4    | Tanishk            |                           
 | Proofreading            | Nov 2      | Nov 5    | Josephine & Dhwani |                           
-| Updates & Incorporation | Nov 5      | Nov 6    | Tanishk            |                           
+| Updates & Incorporation | Nov 5      | Nov 6    | Tanishk            |  
+
+## R Plots
+| Tasks                                  | Start date | Due Date | Assignee  |
+|----------------------------------------|------------|----------|-----------|
+| Plots Generation                       | Nov 7      | Nov 10   | Josephine |
+| Testing & debuging                     | Nov 10     | Nov 11   | Tanishk   |
+| Describing our plots                   | Nov 11     | Nov 12   | Team      |
+| Proofreading,updates and incorporation | Nov 12     | Nov 13   | Dhwani    |
+
 
 ## Github Package
 | Task                         | Start Date | Due Date | Assignee           |
