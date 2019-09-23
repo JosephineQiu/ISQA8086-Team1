@@ -44,6 +44,12 @@
 | Powerpoint Slide             | Dec 7      | Dec 9    | Josephine          |
 | Proofreading & Updates       | Dec 9      | Dec 11   | Dhwani             |
 
+## Presentation
+| Task                                           | Start Date | Due Date | Assignee |
+|------------------------------------------------|------------|----------|----------|
+| Powerpoint Slides Preparation                  | Dec 7      | Dec 9    | Team     |
+| Proofreading & Incorporation to Github Package | Dec 9      | Dec 10   | Team     |
+
 # Communication Agreement
 ## Mode of Contact for the Group as Primary Communications
 * WhatApp Communication
