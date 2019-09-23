@@ -18,11 +18,11 @@
 
 
 ## Audience Profile
-| Task                                        | Start Date | Due Date | Assignee  |   
-|---------------------------------------------|------------|----------|-----------|
-| Research on Client Needs and Interests      | Oct 6      | Oct 13   | Josephine |   
-| Proofreading                                | Oct 14     | Oct 16   | Dhwani    |   
-| Updates and Incorporation to Github Package | Oct 16     | Oct 17   | Tanishk   |   
+| Task                                        | Start Date | Due Date | Assignee  |Contribution Statement |         
+|---------------------------------------------|------------|----------|-----------|-----------------------|
+| Research on Client Needs and Interests      | Oct 6      | Oct 13   | Josephine |                       |
+| Proofreading                                | Oct 14     | Oct 16   | Dhwani    |                       |
+| Updates and Incorporation to Github Package | Oct 16     | Oct 17   | Tanishk   |                       |
 
 ## R Script
 | Task                    | Start Date | Due Date | Assignee           | Contributorship Statement |
