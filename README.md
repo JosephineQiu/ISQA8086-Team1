@@ -22,7 +22,7 @@ Roles of each team member are specified as follows:
 * Assisting the researcher with researching 
 * Integrating the documents in an appropriate way
 
-# Task Specification Per Timeline
+# Deliverables, Tasks Specifications and Responsibilities
 ## Audience Profile
 | Task                                        | Start Date | Due Date | Assignee  |   
 |---------------------------------------------|------------|----------|-----------|
@@ -30,8 +30,6 @@ Roles of each team member are specified as follows:
 | Proofreading                                | Oct 14     | Oct 16   | Dhwani    |   
 | Updates and Incorporation to Github Package | Oct 16     | Oct 17   | Tanishk   |   
 
-
-#### NOTE: *_Timeline may differ for some task as per the circumstances_*
 
 
 # Communication Agreement
