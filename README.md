@@ -8,30 +8,41 @@
 
 ## Background Research & RQ's
 
-| Tasks                                           | Start date | Due Date | Assignee                 | Contributorship Statement  |
-|-------------------------------------------------|------------|----------|--------------------------|----------------------------|
-| Client organization and its mission and goals   | Sept 24    | Sept 28  | Josephine                |                            |
-| Research Questions and the importance of them   | Sept 24    | Sept 27  | Dhwani                   |                            |
-| The study organism / phenomenon                 | Sept 27    | Sept 29  | Tanishk                  |                            |
-| Decisions, interventions & actions for analysis | Sept 29    | Oct 2    | Josephine/Dhwani/Tanishk |                            |
-| Proofreading,updates and incorporation          | Oct 1      | Oct 2    | Josephine                |                            |
+| Tasks                                           | Start date | Due Date | Assignee                 | 
+|-------------------------------------------------|------------|----------|--------------------------|
+| Client organization and its mission and goals   | Sept 24    | Sept 28  | Josephine                |                            
+| Research Questions and the importance of them   | Sept 24    | Sept 27  | Dhwani                   |                            
+| The study organism / phenomenon                 | Sept 27    | Sept 29  | Tanishk                  |                            
+| Decisions, interventions & actions for analysis | Sept 29    | Oct 2    | Josephine/Dhwani/Tanishk |                            
+| Proofreading,updates and incorporation          | Oct 1      | Oct 2    | Josephine                |                            
 
 
 ## Audience Profile
-| Task                                        | Start Date | Due Date | Assignee  |Contribution Statement |         
-|---------------------------------------------|------------|----------|-----------|-----------------------|
-| Research on Client Needs and Interests      | Oct 6      | Oct 13   | Josephine |                       |
-| Proofreading                                | Oct 14     | Oct 16   | Dhwani    |                       |
-| Updates and Incorporation to Github Package | Oct 16     | Oct 17   | Tanishk   |                       |
+| Task                                        | Start Date | Due Date | Assignee  |        
+|---------------------------------------------|------------|----------|-----------|
+| Research on Client Needs and Interests      | Oct 6      | Oct 13   | Josephine |                       
+| Proofreading                                | Oct 14     | Oct 16   | Dhwani    |                       
+| Updates and Incorporation to Github Package | Oct 16     | Oct 17   | Tanishk   |                       
 
 ## R Script
-| Task                    | Start Date | Due Date | Assignee           | Contributorship Statement |
-|-------------------------|------------|----------|--------------------|---------------------------|
-| Descriptive Statistics  | Oct 27     | Oct 30   | Josephine          |                           |
-| Regression Analysis     | Oct 31     | Nov 2    | Dhwani             |                           |
-| ANOVA                   | Nov 2      | Nov 4    | Tanishk            |                           |
-| Proofreading            | Nov 2      | Nov 5    | Josephine & Dhwani |                           |
-| Updates & Incorporation | Nov 5      | Nov 6    | Tanishk            |                           |
+| Task                    | Start Date | Due Date | Assignee           | 
+|-------------------------|------------|----------|--------------------|
+| Descriptive Statistics  | Oct 27     | Oct 30   | Josephine          |                           
+| Regression Analysis     | Oct 31     | Nov 2    | Dhwani             |                           
+| ANOVA                   | Nov 2      | Nov 4    | Tanishk            |                           
+| Proofreading            | Nov 2      | Nov 5    | Josephine & Dhwani |                           
+| Updates & Incorporation | Nov 5      | Nov 6    | Tanishk            |                           
+
+## Github Package
+| Task                         | Start Date | Due Date | Assignee           |
+|------------------------------|------------|----------|--------------------|
+| Readme.md                    | Nov 29     | Dec 1    | Josephine          |
+| R Script and R Plots         | Dec 1      | Dec 3    | Dhwani             |
+| Analysis & Plotting R Script | Dec 1      | Dec 5    | Tanishk            |
+| Summary                      | Dec 5      | Dec 7    | Josephine & Dhwani |
+| Audience File in Markdown    | Dec 5      | Dec 6    | Tanishk            |
+| Powerpoint Slide             | Dec 7      | Dec 9    | Josephine          |
+| Proofreading & Updates       | Dec 9      | Dec 11   | Dhwani             |
 
 # Communication Agreement
 ## Mode of Contact for the Group as Primary Communications
