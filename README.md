@@ -30,8 +30,11 @@ Roles of each team member are specified as follows:
 | Proofreading                                | Oct 14     | Oct 16   | Dhwani    |   
 | Updates and Incorporation to Github Package | Oct 16     | Oct 17   | Tanishk   |   
 
+## Data Cleaning Documentation
 
+## R Script
 
+##
 # Communication Agreement
 ## Mode of Contact for the Group as Primary Communications
 * WhatApp Communication
