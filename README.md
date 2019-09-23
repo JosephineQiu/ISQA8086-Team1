@@ -24,7 +24,14 @@
 | Proofreading                                | Oct 14     | Oct 16   | Dhwani    |   
 | Updates and Incorporation to Github Package | Oct 16     | Oct 17   | Tanishk   |   
 
-
+## R Script
+| Task                    | Start Date | Due Date | Assignee           | Contributorship Statement |
+|-------------------------|------------|----------|--------------------|---------------------------|
+| Descriptive Statistics  | Oct 27     | Oct 30   | Josephine          |                           |
+| Regression Analysis     | Oct 31     | Nov 2    | Dhwani             |                           |
+| ANOVA                   | Nov 2      | Nov 4    | Tanishk            |                           |
+| Proofreading            | Nov 2      | Nov 5    | Josephine & Dhwani |                           |
+| Updates & Incorporation | Nov 5      | Nov 6    | Tanishk            |                           |
 
 # Communication Agreement
 ## Mode of Contact for the Group as Primary Communications
