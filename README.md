@@ -2,6 +2,12 @@
   
   This project is the study of cyclic and seasonal natural phenomena as how temperature affects the growth of on 8 different species of plants. The analysis will be more focused on the factor of temperature as of how the breaking of bud is affected by the temperature, mainly at the time of early spring. Temperature is recorded hourly by the "National Phenological Network" and stored and hence will be used in the study. End of the study report will be healthy enough to explain how different changes related to activities of a  growing plant/bud likely "Increase in the bud size", "presence and the participation of caterpillars", "Breaking of the bud"  is affected by the rise and fall of temperature.
 
+## Team Member
+
+### savants
+#### Dhwani Kumrawat
+#### Menglin Qiu
+#### Ranga Tanishk Reddy
 
 # Deliverables, Tasks Specifications and Responsibilities
 
@@ -91,5 +97,5 @@ We will implement the following methods to deal with *late response*:
 * Phone calls will be made directly to the individuals not responding in a timely manner. 
 * In case of emergency issues happening to an individual, the other members will cover his/her part for timely submission. The situation will be reported directly to our supervisor/professor.
 
-## COntributorship Statement
+## Contributorship Statement
 Dhwani Kumrawat, Josephine Qui, Ranga Tanishk Reddy have worked collectively to generate the documentation of this project work plan.
