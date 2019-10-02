@@ -11,18 +11,18 @@ The datasets for all the species that we have right are from 2016 to Aug 2019. M
 
 ## Research Questions
 Our research questions, based on the above-mentioned information about our project, are as follows:
-•	What is the temperature change pattern in early Spring in Nantucket?
-•	Is there a time in a year that the most shrubs break their leaf buds? If so, when is that?
-•	How does the elevation variances among the 8 sites affect their temperature? Does the variance have a significant influence on the temperature?
-•	How does air temperature affect the soil temperature?
-•	Are the number of breaking buds functionally dependent on the air temperature and soil temperature? If yes, what will that be?
+•	What is the temperature change pattern in early Spring in Nantucket? 
+•	Is there a time in a year that the most shrubs break their leaf buds? If so, when is that? 
+•	How does the elevation variances among the 8 sites affect their temperature? Does the variance have a significant influence on the temperature? 
+•	How does air temperature affect the soil temperature? 
+•	Are the number of breaking buds functionally dependent on the air temperature and soil temperature? If yes, what will that be? 
 
 ## The Importance of the Research Questions
-Our research questions will be beneficial in terms of the following aspects:
-•	Prediction of temperature change - by discovering the pattern of temperature change we will be able to predict the temperature change in the future for the growth of all the species on the island.
-•	Enhancement of our understanding on the growth patterns of different shrub species. By analysing on the breaking leaf buds we will hopefully establish a pattern of growth for the shrub species so that the staff members can be prepared to take further care of the shrubs in a certain time of a year.
-•	Identifying the influence of elevation on temperature. By identifying the influence of elevation on temperature, we can differentiate the max/min temperature on each site and perform further analysis based on the elevation factor.
-•	Identifying the influence of temperature on breaking buds. As is known to all, global warming is a concerning issue to the nature and the human being. With a specific function established between breaking buds and the other independent variables, we can provide a better prediction on the growth of the shrubs and contribute to maintaining the diversity of the plants on the island.  
+Our research questions will be beneficial in terms of the following aspects: 
+•	Prediction of temperature change - by discovering the pattern of temperature change we will be able to predict the temperature change in the future for the growth of all the species on the island. 
+•	Enhancement of our understanding on the growth patterns of different shrub species. By analysing on the breaking leaf buds we will hopefully establish a pattern of growth for the shrub species so that the staff members can be prepared to take further care of the shrubs in a certain time of a year. 
+•	Identifying the influence of elevation on temperature. By identifying the influence of elevation on temperature, we can differentiate the max/min temperature on each site and perform further analysis based on the elevation factor. 
+•	Identifying the influence of temperature on breaking buds. As is known to all, global warming is a concerning issue to the nature and the human being. With a specific function established between breaking buds and the other independent variables, we can provide a better prediction on the growth of the shrubs and contribute to maintaining the diversity of the plants on the island.   
 
 
 # Study Organisom/Phenomenon
