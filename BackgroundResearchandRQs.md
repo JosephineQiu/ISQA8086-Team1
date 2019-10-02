@@ -21,7 +21,16 @@ A shrub is a small- to medium-sized perennial woody plant. Shrubs have persisten
 
 Generally, plants grow faster with increasing air temperatures up to a point. Extreme heat will slow growth and also increase moisture loss. Generally, plants grow faster with increasing air temperatures up to a point. The temperatures for optimal growth vary with the type of plant. Some annual flowers and vegetables are extremely sensitive to cold, and transplants should not be planted until temperatures are consistently warm. Extremely hot or cold soil temperatures can also hamper plant growth, as well as affect seed germination. Cool temperatures in fall trigger the plant to reduce growth and store energy. As temperatures approach freezing, growth stops and the plant (if perennial) becomes dormant. 
 
+### Why Soil Temperature Matters 
+
+Soil Temperature is very important for roots of shrubs. We often just assume soil temperatures mirror the air temperature but they don't.There are different processes involved in how heat is moved. Example: Spring planting time is when soil temperatures are most critical. When do you put those seeds into the ground? That depends on what you’re planting. Different plants require various soil temperatures. And there’s more to consider once you’ve determined what you’re planting. For every type of plant, there is a minimum temperature for seeds to germinate and an optimum temperature for seed germination.
+
+Since there is difference between Soil and Air temperature that's why researchers have to take logs for both air and soil temperature.
+To take the soil temperature we have to bury a temperature logger into the soil and monitor in some specific time intervals.
+
 This type of Study mostly focuses on lifecycle events of shrubs like **First Bloom, Budburst (conifer), First leaf, First leaf, leaf elongation, End bloom.**
+
+
 
 #### Some Species of Shrubs (Scientific Name)
 * Prunus serotina
@@ -48,6 +57,7 @@ Dr. Bois's research at LLNF has shown that some of native shrubs (lowbush bluebe
 * University of Illinois Extension (August 2014) Effects of temperature (https://extension.illinois.edu/downloads/hkmw/55040.pdf)
 * Doree Armstrong (May 2014) Shrub growth decreases as winter temps warm up (https://www.washington.edu/news/2014/05/20/shrub-growth-decreases-as-winter-temperatures-fluctuate-up/)
 * Richard Jauron (2019) Proper Time to Prune Trees and Shrubs (https://hortnews.extension.iastate.edu/2015/03-13/pruning.html)
+* Dr. Ed Brotak (May 2019) Why Soil Temperature matters (https://www.hortmag.com/weekly-tips/cultivation/soil-temperature-is-critical-to-garden-plants)
 * Other references (https://www.sciencedaily.com/releases/2014/05/140520142327.htm)
                  (https://www.mortonarb.org/trees-plants/tree-and-plant-advice/horticulture-care/trees-and-shrubs-four-seasons-landscape)
    
