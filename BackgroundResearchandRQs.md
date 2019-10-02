@@ -19,8 +19,9 @@ The non-profitable organization **Linda Loring Nature foundation (_LLNF_)** is d
 
 A shrub is a small- to medium-sized perennial woody plant. Shrubs have persistent woody stems above the ground. They are distinguished from trees by their multiple stems and shorter height, less than 6 m-10 m (20 ft–33 ft) tall.
 
-Generally, plants grow faster with increasing air temperatures up to a point. Extreme heat will slow growth and also increase moisture loss. Extremely hot or cold soil temperatures can also hamper shrubs growth, as well as affect seed germination.
-This type of Study mostly focuses on some shrubs lifecycle events like **First Bloom, Budburst (conifer), First leaf, First leaf, leaf elongation, End bloom.**
+Generally, plants grow faster with increasing air temperatures up to a point. Extreme heat will slow growth and also increase moisture loss. Generally, plants grow faster with increasing air temperatures up to a point. The temperatures for optimal growth vary with the type of plant. Some annual flowers and vegetables are extremely sensitive to cold, and transplants should not be planted until temperatures are consistently warm. Extremely hot or cold soil temperatures can also hamper plant growth, as well as affect seed germination. Cool temperatures in fall trigger the plant to reduce growth and store energy. As temperatures approach freezing, growth stops and the plant (if perennial) becomes dormant. 
+
+This type of Study mostly focuses on lifecycle events of shrubs like **First Bloom, Budburst (conifer), First leaf, First leaf, leaf elongation, End bloom.**
 
 #### Some Species of Shrubs (Scientific Name)
 * Prunus serotina
@@ -36,14 +37,20 @@ This type of Study mostly focuses on some shrubs lifecycle events like **First B
 
 Thers is nn article "**To Everything There Is a Season**" which is about the study on Shrubs on Nantucekt Island by **Dr. Sarah Treanor Bois**
 In this article she mentioned some important points aboutSpringtime temperature on Nantucket Island.
-Springtime temperatures have been arriving earlier on Nantucket, just like most of New England. There is year-to-year variation, but generally we are seeing springtime temperatures arriving 2 to 4 days earlier than the historic average. What does that mean for our plant species?
-Her research at LLNF has shown that some of native shrubs (lowbush blueberry, for example) can track the earlier spring warming and leaf out with the warm temperatures. However, just because they leaf out earlier, doesn’t mean they can just cruise into a longer growing season. Springs is also becoming more erratic with more frequent late frost events. Some of our species, like black huckleberry, have been topkilled during late frost events. This is the type of affect which, if it becomes a pattern, could have devastating effects of the overall population. Other species, such as black cherry and beach plum, aren’t able to respond as nimbly to warming temperatures resulting in a delayed phenology from surrounding species.
+Springtime temperatures have been arriving earlier on Nantucket, just like most of New England. There is year-to-year variation, but generally they are seeing springtime temperatures arriving 2 to 4 days earlier than the historic average, So researchers are looking into it to find out that these changes in climate is affecting shrubs or not.
+
+Dr. Bois's research at LLNF has shown that some of native shrubs (lowbush blueberry, for example) can track the earlier spring warming and leaf out with the warm temperatures. However, just because they leaf out earlier, doesn’t mean they can just cruise into a longer growing season. Springs is also becoming more erratic with more frequent late frost events. Some of our species, like black huckleberry, have been topkilled during late frost events. This is the type of affect which, if it becomes a pattern, could have devastating effects of the overall population. Other species, such as black cherry and beach plum, aren’t able to respond as nimbly to warming temperatures resulting in a delayed phenology from surrounding species.
 
 ### Literature Cited
-* What is shrubs and life cycle (https://en.wikipedia.org›wiki›Shrub)
-* Article by Dr. Sara Bois (https://yesterdaysisland.com/to-everything-there-is-a-season/)
+* Wikipedia-SouthernKangaroo (September 2019) What is shrubs and life cycle (https://en.wikipedia.org›wiki›Shrub)
+* Dr. Sara Bois (September 2019) Article on "To Everything There Is a Season" (https://yesterdaysisland.com/to-everything-there-is-a-season/)
+
+* University of Illinois Extension (August 2014) Effects of temperature (https://extension.illinois.edu/downloads/hkmw/55040.pdf)
+* Doree Armstrong (May 2014) Shrub growth decreases as winter temps warm up (https://www.washington.edu/news/2014/05/20/shrub-growth-decreases-as-winter-temperatures-fluctuate-up/)
+* Richard Jauron (2019) Proper Time to Prune Trees and Shrubs (https://hortnews.extension.iastate.edu/2015/03-13/pruning.html)
 * Other references (https://www.sciencedaily.com/releases/2014/05/140520142327.htm)
                  (https://www.mortonarb.org/trees-plants/tree-and-plant-advice/horticulture-care/trees-and-shrubs-four-seasons-landscape)
+   
 
 
 
