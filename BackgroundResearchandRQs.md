@@ -34,7 +34,6 @@ The kind of decisions, interventions, or actions that analysis results could sup
 * Linda Loring Nature Foundation History. (n.d.). Linda Loring Nature Foundation. Retrieved from https://llnf.org/history
 * Linda Loring Nature Foundation Mission. (n.d.). Linda Loring Nature Foundation. Retrieved from https://llnf.org/mission
 
-
 # Proofreader Signoff
 The contents have been reviewed and confirmed by the following team member(proofreader):
 
