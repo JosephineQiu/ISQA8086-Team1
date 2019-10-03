@@ -11,9 +11,9 @@
 
 # Study Organism/Phenomenon
 
-The background research is based on the phenology of Shrubs. Phenology is the study of the timing of the biological events in plants such as flowering, leafing, reproduction. Scientists who study phenology are interested in the timing of such biological events in relation to changes in season and climate("SouthernKangaroo",Sept 2019).
+Background research based on the phenology of Shrubs. Phenology is the study of the timing of the biological events in plants such as flowering, leafing, reproduction. Scientists who study phenology are interested in the timing of such biological events in relation to changes in season and climate("SouthernKangaroo",Sept 2019).
 
-The non-profit organization **Linda Loring Nature foundation (_LLNF_)** studies on 8 species of shrubs. The researchers from the organization study the biological events happening to the growth of the shrubs (Prunus) and how temperature can affect their development, so they have maintained the Temperature logs. They have set up two Temperature loggers, one Temperature measures the air temperature on an hourly basis and 2nd Temperature logger buried under the soil to measure the soil temperature.
+The non-profitable organization **Linda Loring Nature foundation (_LLNF_)** is doing some studies on 8 species of shrubs. The researchers from the organization study the biological events happen in shrubs (Prunus) and how temperature can affect their development, so they have maintained the Temperature logs. They have set up two Temperature loggers, one Temperature measures the air temperature on an hourly basis and 2nd Temperature logger buried under the soil to measure the soil temperature.
 
 ### What is Shrubs(Prunus) and how temperature affects their development
 
@@ -44,7 +44,7 @@ This type of Study mostly focuses on lifecycle events of shrubs like **First Blo
 
 ### About study on shrubs in Nantucket Island
 
-There is an article "**To Everything There Is a Season**"(https://yesterdaysisland.com/to-everything-there-is-a-season/) which is about the study on Shrubs on Nantucket Island by **Dr. Sarah Treanor Bois**("Dr. Sara Bois",Sept 2019)
+There is an article [To Everything There Is a Season](https://yesterdaysisland.com/to-everything-there-is-a-season) which is about the study on Shrubs on Nantucket Island by **Dr. Sarah Treanor Bois**("Dr. Sara Bois",Sept 2019)
 In this article, she mentioned some important points about springtime temperature on Nantucket Island.
 Springtime temperatures have been arriving earlier on Nantucket, just like most of New England. There is year-to-year variation, but generally, they are seeing springtime temperatures arriving 2 to 4 days earlier than the historic average, So researchers are looking into it to find out that these changes in climate are affecting shrubs or not.
 
@@ -52,15 +52,15 @@ Dr. Bois's research at LLNF has shown that some of the native shrubs (lowbush bl
 
 
 ### Literature Cited
-* Wikipedia-SouthernKangaroo (September 2019) What is shrubs and life cycle (https://en.wikipedia.org›wiki›Shrub)
-* Dr. Sara Bois (September 2019) Article on "To Everything There Is a Season" (https://yesterdaysisland.com/to-everything-there-is-a-season/)
+* Wikipedia-SouthernKangaroo (September 2019) What is shrubs and life cycle https://en.wikipedia.org›wiki›Shrub
+* Dr. Sara Bois (September 2019) Article on "To Everything There Is a Season" https://yesterdaysisland.com/to-everything-there-is-a-season/
 
-* University of Illinois Extension (August 2014) Effects of temperature (https://extension.illinois.edu/downloads/hkmw/55040.pdf)
-* Doree Armstrong (May 2014) Shrub growth decreases as winter temps warm up (https://www.washington.edu/news/2014/05/20/shrub-growth-decreases-as-winter-temperatures-fluctuate-up/)
-* Richard Jauron (2019) Proper Time to Prune Trees and Shrubs (https://hortnews.extension.iastate.edu/2015/03-13/pruning.html)
-* Dr. Ed Brotak (May 2019) Why Soil Temperature matters (https://www.hortmag.com/weekly-tips/cultivation/soil-temperature-is-critical-to-garden-plants)
-* Other references (https://www.sciencedaily.com/releases/2014/05/140520142327.htm)
-                 (https://www.mortonarb.org/trees-plants/tree-and-plant-advice/horticulture-care/trees-and-shrubs-four-seasons-landscape)
+* University of Illinois Extension (August 2014) Effects of temperature https://extension.illinois.edu/downloads/hkmw/55040.pdf
+* Doree Armstrong (May 2014) Shrub growth decreases as winter temps warm up https://www.washington.edu/news/2014/05/20/shrub-growth-decreases-as-winter-temperatures-fluctuate-up/
+* Richard Jauron (2019) Proper Time to Prune Trees and Shrubs https://hortnews.extension.iastate.edu/2015/03-13/pruning.html
+* Dr. Ed Brotak (May 2019) Why Soil Temperature matters https://www.hortmag.com/weekly-tips/cultivation/soil-temperature-is-critical-to-garden-plants
+* Other references https://www.sciencedaily.com/releases/2014/05/140520142327.htm
+                   https://www.mortonarb.org/trees-plants/tree-and-plant-advice/horticulture-care/trees-and-shrubs-four-seasons-landscape
    
 
 
