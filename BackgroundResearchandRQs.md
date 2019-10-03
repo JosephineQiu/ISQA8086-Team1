@@ -11,9 +11,9 @@
 
 # Study Organism/Phenomenon
 
-Background research based on the phenology of Shrubs. Phenology is the study of the timing of the biological events in plants such as flowering, leafing, reproduction. Scientists who study phenology are interested in the timing of such biological events in relation to changes in season and climate("SouthernKangaroo",Sept 2019).
+The background research is based on the phenology of Shrubs. Phenology is the study of the timing of the biological events in plants such as flowering, leafing, reproduction. Scientists who study phenology are interested in the timing of such biological events in relation to changes in season and climate("SouthernKangaroo",Sept 2019).
 
-The non-profitable organization **Linda Loring Nature foundation (_LLNF_)** is doing some studies on 8 species of shrubs. The researchers from the organization study the biological events happen in shrubs (Prunus) and how temperature can affect their development, so they have maintained the Temperature logs. They have set up two Temperature loggers, one Temperature measures the air temperature on an hourly basis and 2nd Temperature logger buried under the soil to measure the soil temperature.
+The non-profit organization **Linda Loring Nature foundation (_LLNF_)** studies on 8 species of shrubs. The researchers from the organization study the biological events happening to the growth of the shrubs (Prunus) and how temperature can affect their development, so they have maintained the Temperature logs. They have set up two Temperature loggers, one Temperature measures the air temperature on an hourly basis and 2nd Temperature logger buried under the soil to measure the soil temperature.
 
 ### What is Shrubs(Prunus) and how temperature affects their development
 
