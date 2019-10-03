@@ -50,8 +50,10 @@ Springtime temperatures have been arriving earlier on Nantucket, just like most 
 
 Dr. Bois's research at LLNF has shown that some of the native shrubs (lowbush blueberry, for example) can track the earlier spring warming and leaf out with the warm temperatures. However, just because they leaf out earlier, doesn’t mean they can just cruise into a longer growing season. Springs is also becoming more erratic with more frequent late frost events. Some of our species, like black huckleberry, have been topkilled during late frost events. If this type of effect becomes a pattern, could have devastating effects on the overall population. Other species, such as black cherry and beach plum, aren’t able to respond as nimbly to warming temperatures resulting in delayed phenology from surrounding species.
 
+# Potential Benefits of the Analysis Results
+The kind of decisions, interventions, or actions that analysis results could support
 
-### Literature Cited
+# References
 * Wikipedia-SouthernKangaroo (September 2019) What is shrubs and life cycle https://en.wikipedia.org›wiki›Shrub
 * Dr. Sara Bois (September 2019) Article on "To Everything There Is a Season" https://yesterdaysisland.com/to-everything-there-is-a-season/
 
@@ -61,18 +63,6 @@ Dr. Bois's research at LLNF has shown that some of the native shrubs (lowbush bl
 * Dr. Ed Brotak (May 2019) Why Soil Temperature matters https://www.hortmag.com/weekly-tips/cultivation/soil-temperature-is-critical-to-garden-plants
 * Other references https://www.sciencedaily.com/releases/2014/05/140520142327.htm
                    https://www.mortonarb.org/trees-plants/tree-and-plant-advice/horticulture-care/trees-and-shrubs-four-seasons-landscape
-   
-
-
-
-
-
-
-# Potential Benefits of the Analysis Results
-The kind of decisions, interventions, or actions that analysis results could support
-
-# References
-
 # Proofreader Signoff
 The contents have been reviewed and confirmed by the following team member(proofreader):Dhwani Kumrawat
 
