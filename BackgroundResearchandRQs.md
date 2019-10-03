@@ -31,8 +31,8 @@ Our research questions will be beneficial in terms of the following aspects:
 The kind of decisions, interventions, or actions that analysis results could support
 
 # References
-Linda Loring Nature Foundation History. (n.d.). Linda Loring Nature Foundation. Retrieved from https://llnf.org/history
-Linda Loring Nature Foundation Mission. (n.d.). Linda Loring Nature Foundation. Retrieved from https://llnf.org/mission
+* Linda Loring Nature Foundation History. (n.d.). Linda Loring Nature Foundation. Retrieved from https://llnf.org/history
+* Linda Loring Nature Foundation Mission. (n.d.). Linda Loring Nature Foundation. Retrieved from https://llnf.org/mission
 
 
 # Proofreader Signoff
