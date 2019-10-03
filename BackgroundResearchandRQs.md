@@ -71,6 +71,8 @@ Dr. Bois's research at LLNF has shown that some of the native shrubs (lowbush bl
 # Potential Benefits of the Analysis Results
 The kind of decisions, interventions, or actions that analysis results could support
 
+# References
+
 # Proofreader Signoff
 The contents have been reviewed and confirmed by the following team member(proofreader):Dhwani Kumrawat
 
