@@ -17,3 +17,9 @@
 ## Past achievements
 ## Business model
 ## Legal/regulatory/policy considerations
+
+# Contributorship Statement
+ have worked collectively to generate the documentation of this project work plan.
+
+# Proofreader Signoff
+The above contents are reviewed and confirmed by   .
