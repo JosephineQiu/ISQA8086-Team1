@@ -22,12 +22,12 @@
 | Proofreading,updates and incorporation          | Oct 1      | Oct 2    | Dhwani                |                            
 
 
-## Audience Profile
+## [Audience Profile](https://github.com/JosephineQiu/ISQA8086-Team1/blob/master/AudienceProfile.md)
 
 | Task                                        | Start Date | Due Date | Assignee  |        
 |---------------------------------------------|------------|----------|-----------|
-| Research on Client Needs and Interests      | Oct 6      | Oct 13   | Josephine |                       
-| Proofreading                                | Oct 14     | Oct 16   | Dhwani    |                       
+| Research on Client Needs and Interests      | Oct 6      | Oct 13   | Team |                       
+| Proofreading                                | Oct 14     | Oct 16   | Tanishk    |                       
 | Updates and Incorporation to Github Package | Oct 16     | Oct 17   | Tanishk   |    
 
 ## Data cleaning Documentation
