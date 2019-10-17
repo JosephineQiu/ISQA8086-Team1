@@ -11,15 +11,15 @@
 
 # Deliverables, Tasks Specifications and Responsibilities
 
-## Background Research & RQ's
+## [Background Research & RQ's](https://github.com/JosephineQiu/ISQA8086-Team1/blob/master/BackgroundResearchandRQs.md)
 
 | Tasks                                           | Start date | Due Date | Assignee                 | 
 |-------------------------------------------------|------------|----------|--------------------------|
 | Client organization and its mission and goals   | Sept 24    | Sept 28  | Josephine                |                            
-| Research Questions and the importance of them   | Sept 24    | Sept 27  | Dhwani                   |                            
-| The study organism / phenomenon                 | Sept 27    | Sept 29  | Tanishk                  |                            
-| Decisions, interventions & actions for analysis | Sept 29    | Oct 2    | Team                     |                            
-| Proofreading,updates and incorporation          | Oct 1      | Oct 2    | Josephine                |                            
+| Research Questions and the importance of them   | Sept 24    | Sept 27  | Josephine                   |                            
+| The study organism / phenomenon                 | Sept 27    | Sept 29  | Dhwani                  |                            
+| Decisions, interventions & actions for analysis | Sept 29    | Oct 2    | Tanishk                     |                            
+| Proofreading,updates and incorporation          | Oct 1      | Oct 2    | Dhwani                |                            
 
 
 ## Audience Profile
