@@ -23,6 +23,9 @@ Challenges that we identify for LLNF are as follows:
 ## Past achievements
 ## Business model
 ## Legal/regulatory/policy considerations
+# References
+* Linda Loring Nature Foundation Mission. (n.d.). Linda Loring Nature Foundation. Retrieved from https://llnf.org/mission
+* Data Literacy. (n.d.). Renaissance. Retrieved from https://www.renaissance.com/edwords/data-literacy/
 
 # Contributorship Statement
 _Menglin Qiu_, _Dhwani Kumrawat_ and _Ranga Reddy_ have worked collectively to generate the documentation of this project work plan.
