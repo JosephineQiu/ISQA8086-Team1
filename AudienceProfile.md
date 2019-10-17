@@ -1,4 +1,5 @@
-# Name (person & organization): Linda Loring Nature Foundation(LLNF)
+# Name (person & organization) 
+## Linda Loring Nature Foundation(LLNF)
 
 # Sociodemographics
 ## Training & education
