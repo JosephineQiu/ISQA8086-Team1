@@ -62,7 +62,7 @@ LLNF holds very basic organizational structure with limited officers and thrive 
 * The Inquirer and Mirror. (2019, April 6). Linda Loring Foundation receives invasive-species grant. Retrieved from https://www.ack.net/news/20190404/linda-loring-foundation-receives-invasive-species-grant.
 
 # Contributorship Statement
-_Menglin Qiu_, _Dhwani Kumrawat_ and _Ranga Reddy_ have worked collectively to generate the documentation of this project work plan.
+_Menglin Qiu_, _Dhwani Kumrawat_ and _Ranga Reddy_ have worked collectively to generate the documentation of this documentation.
 
 # Proofreader Signoff
 The above contents are reviewed and confirmed by _Ranga Reddy_  .
