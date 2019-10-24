@@ -47,14 +47,54 @@ There are some data which we have to clean to make a good sense of files.
 
 3) We have checked for duplicate values for Date&Time column, and if we have found duplicates then we removed extra rows and just Keep 1 row.
 
-# R Script
+# R Script (Overview)
+We used below scripts for Each sites to get the clean data
 
+## Site A
+```
+temp = list.files(path = "C:/Users/Dhwani/Documents/Site F G H/SiteA_Temp",pattern="*.csv",full.names = TRUE)
 
-# References
+temp_SiteA <- ldply(temp,read_csv,skip=1)
+colnames(temp_SiteA)
+names(temp_SiteA)[names(temp_SiteA) == "Date Time, GMT-04:00"] <- "DateTime"
+names(temp_SiteA)[names(temp_SiteA) == "Temp, Â°C (LGR S/N: 10511284, SEN S/N: 10511284)"] <- "Temperature"
+names(temp_SiteA)[names(temp_SiteA) == "Intensity, Lux (LGR S/N: 10511284, SEN S/N: 10511284)"] <- "Intensity"
+names(temp_SiteA)[names(temp_SiteA) == "Temp, Â°C (LGR S/N: 10638850, SEN S/N: 10638850)"] <- "Temperature1"
+names(temp_SiteA)[names(temp_SiteA) == "Intensity, Lux (LGR S/N: 10638850, SEN S/N: 10638850)"] <- "Intensity1"
+names(temp_SiteA)[names(temp_SiteA) == "Date Time, GMT-05:00"] <- "DateTime1"
 
+temp_SiteA <- temp_SiteA %>% mutate(as.factor)
+temp_SiteA <- temp_SiteA %>% mutate_if(is.na,"")
+temperature <- paste(temp_SiteA$Temperature,temp_SiteA$Temperature1)
+DateTime <- paste(temp_SiteA$DateTime,temp_SiteA$DateTime1)
+Intensity <- paste(temp_SiteA$Intensity,temp_SiteA$Intensity1)
+temp_SiteA <- data.frame(DateTime,temperature,Intensity)
+gsub("NA, ","",temp_SiteA)
+```
+
+## Site E
+
+```
+files_E = list.files(path = "C:/Users/Dhwani/Documents/Site F G H/Site E", pattern = "*.csv", full.names = TRUE)
+
+datacsv_E= ldply(files_E,read.csv,header= FALSE)
+datacsv_E=datacsv_E[, !(colnames(datacsv_E) %in% c("V5","V6","V7","V8"))]
+datacsv_E=datacsv_E[(!duplicated(datacsv_E$V2)  & !grepl("Plot",datacsv_E$V1) & !grepl("#",datacsv_E$V1)),]
+colnames(datacsv_E)
+names(datacsv_E)[names(datacsv_E) == "V1"] <- "Seq"
+names(datacsv_E)[names(datacsv_E) == "V2"] <- "Date&Time"
+names(datacsv_E)[names(datacsv_E) == "V3"] <- "Temperature"
+names(datacsv_E)[names(datacsv_E) == "V4"] <- "Intensity"
+write.csv(datacsv_E, file = "MyData.csv")
+
+```
+For whole script please refer [DataCleaningLLNF.Rmd](https://github.com/JosephineQiu/ISQA8086-Team1/blob/master/DataCleaningDocumentation/DataCleaningLLNF.Rmd)
 
 # Contributorship Statement
-Dhwani Kumrawat, Josephine Qui, Ranga Tanishk Reddy have worked collectively to generate the documentation of this project work plan.
+Dhwani Kumrawat, Josephine Qui, Ranga Tanishk Reddy have worked collectively to generate the documentation of this project of Data cleaning documentation.
 
 # Proofreader Signoff
 The above contents are reviewed and confirmed by Josephine Qiu.
+
+
+
