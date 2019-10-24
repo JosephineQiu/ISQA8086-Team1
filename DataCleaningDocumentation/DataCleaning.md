@@ -1,11 +1,32 @@
 # Data Source Description
-(1-2 paragraph text description of the data source/s (how much, where from, what it contains, etc.) with a properly formatted citation for each data source. This should include how many rows & columns (&/or tables) and sample column headers. Each data source you're using should have a similar description)
+
+Linda Loring Nature Foundation being the organization running and maintaining all the species of plants to study the effects, and we as a team being the one to analyze and support further study of the organization, the data sets provided to us came from Linda Loring Nature Foundation.
+They keep track of temperature of the surrounding air and the Intensity of the sunlight throughout the day across all the sites, recording temperature multiple of times a day. We have not considered the factor **Intensity** for this project and hence will be excluded in the future.
+
+Starting from the year 2015, holds record for 4 different months or two different seasons i.e. March, May, August, and December.
+
+2016, holds record for 4 different months i.e. April, June, May, October.
+
+2017, holds record for 3 different i.e. April, June and October.
+
+2018, holds record for 2 different months i.e. February and May.
+
+Another data set includes soil temperature for the year 2017 calculated multiple times throughout the
+day every day for the whole year.
+Moreover, Data Set includes recording for 8 different sites named from **A** to **H** for each and every month of the year named above.
+Recording of each month has four _columns, namely, Date, Time, Temperature and Intensity_.
 
 # Intellectual Policy Constraints
-Specifically identify any intellectual policy constraints, or lack thereof (licensing).
+
+The analysis which we are going to conduct will have MIT license issued. We have been permitted to use the data given by the Linda Loring Foundation to conduct the study to support their cause. For further assistance with the data and to guide through the limitations of using the data sets will be provided by **Dr.Sarah T.Bois** associated with LLNF organization.
 
 # Meta Data Description
-1 paragraph description of the metadata: what is available to help you interpret and understand the data?
+
+For the study of the different plant related events, we will be focusing more on the **Temperature**
+factor and therefore we have temperature recorded using a device with thousands of entries since the
+year 2016 which would be enough to comprehend the effects of the temperature mainly on the event
+**breaking of bud**.
+Each site is at different elevation and hence the factor of elevation will be considered to study its effect on plants. Still the team has not yet planned out as of how to use the factor of elevation into the study and hence the issue needs to be consulted with our advisors. Another data set which we received from **Nature’s Notebook** needs to be studied well and further plan will be to integrate some of the columns from that data set to the current one, like the time when the even **breaking of the event** occurred.
 
 # Issues of the Dataset(s)
 We have identified the following issues of the datasets:
