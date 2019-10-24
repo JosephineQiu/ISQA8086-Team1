@@ -16,7 +16,15 @@ We have identified the following issues of the datasets:
 * Lack of common column names - The column names that are used to record the temperature observations are not uniform, and thus columns with diffrent headers can't be directly joined, which leads to a lot of extra work when we are combining the data tables.
 
 # Rationale of Dataset Handling
-1 paragraph description of your rationale for the steps you're taking to remediate data. For example, if you need to fill in empty fields, specify what value you chose and why.
+
+We have joined csv files as per the sites through Rscript, there are 8 sites so finally we have 8 consolidated R data for each site.
+There are some data which we have to clean to make a good sense of files. 
+
+1) Remove the headers for each file as we need just 1 common header and they specify the first column of Header as "#" so we have removed the rows starting with "#".
+
+ 2) Each file has 1st row with data like "Plot " so which we don't need these rows as well, so we have removed those rows which has value like "Plot"
+
+3) We have checked for duplicate values for Date&Time column, and if we have found duplicates then we removed extra rows and just Keep 1 row.
 
 # R Script
 
