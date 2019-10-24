@@ -1,0 +1,155 @@
+---
+title: "DataCleaning"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(readr)
+library(plyr)
+library(tidyr)
+library(tidyverse)
+library(caret)
+library(dbplyr)
+
+## Site A
+
+temp = list.files(path = "C:/Users/Dhwani/Documents/Site F G H/SiteA_Temp",pattern="*.csv",full.names = TRUE)
+
+temp_SiteA <- ldply(temp,read_csv,skip=1)
+colnames(temp_SiteA)
+names(temp_SiteA)[names(temp_SiteA) == "Date Time, GMT-04:00"] <- "DateTime"
+names(temp_SiteA)[names(temp_SiteA) == "Temp, Â°C (LGR S/N: 10511284, SEN S/N: 10511284)"] <- "Temperature"
+names(temp_SiteA)[names(temp_SiteA) == "Intensity, Lux (LGR S/N: 10511284, SEN S/N: 10511284)"] <- "Intensity"
+names(temp_SiteA)[names(temp_SiteA) == "Temp, Â°C (LGR S/N: 10638850, SEN S/N: 10638850)"] <- "Temperature1"
+names(temp_SiteA)[names(temp_SiteA) == "Intensity, Lux (LGR S/N: 10638850, SEN S/N: 10638850)"] <- "Intensity1"
+names(temp_SiteA)[names(temp_SiteA) == "Date Time, GMT-05:00"] <- "DateTime1"
+
+temp_SiteA <- temp_SiteA %>% mutate(as.factor)
+temp_SiteA <- temp_SiteA %>% mutate_if(is.na,"")
+temperature <- paste(temp_SiteA$Temperature,temp_SiteA$Temperature1)
+DateTime <- paste(temp_SiteA$DateTime,temp_SiteA$DateTime1)
+Intensity <- paste(temp_SiteA$Intensity,temp_SiteA$Intensity1)
+temp_SiteA <- data.frame(DateTime,temperature,Intensity)
+gsub("NA, ","",temp_SiteA)
+
+
+## Site B
+
+temp = list.files(path = "C:/Users/Dhwani/Documents/Site F G H/SiteB_Temp",pattern="*.csv")
+myfiles = lapply(temp, read.delim)
+files <- list.files(pattern = "*.csv")
+temp_SiteB <- ldply(files,read_csv,skip=1)
+colnames(temp_SiteB)
+names(temp_SiteB)[names(temp_SiteB) == "Date Time, GMT-04:00"] <- "DateTime"
+names(temp_SiteB)[names(temp_SiteB) == "Temp, Â°C (LGR S/N: 10511288, SEN S/N: 10511288)"] <- "Temperature"
+names(temp_SiteB)[names(temp_SiteB) == "Intensity, Lux (LGR S/N: 10511288, SEN S/N: 10511288)"] <- "Intensity"
+names(temp_SiteB)[names(temp_SiteB) == "Temp, Â°C (LGR S/N: 10869723, SEN S/N: 10869723)"] <- "Temperature1"
+names(temp_SiteB)[names(temp_SiteB) == "Temp, Â°C (LGR S/N: 10869722, SEN S/N: 10869722)"] <- "Temperature2"
+names(temp_SiteB)[names(temp_SiteB) == "Date Time, GMT-05:00"] <- "DateTime1"
+
+temp_SiteB <- temp_SiteB %>% mutate(as.factor)
+temp_SiteB <- temp_SiteB %>% mutate_if(is.na,"")
+temperature <- paste(temp_SiteB$Temperature,temp_SiteB$Temperature1,temp_SiteB$Temperature2)
+DateTime <- paste(temp_SiteB$DateTime,temp_SiteB$DateTime1)
+Intensity <- paste(temp_SiteB$Intensity)
+temp_SiteB <- data.frame(DateTime,temperature,Intensity)
+
+## Site C
+
+temp = list.files(path = "C:/Users/Dhwani/Documents/Site F G H/SiteC_Temp",pattern="*.csv")
+myfiles = lapply(temp, read.delim)
+files <- list.files(pattern = "*.csv")
+temp_SiteC <- ldply(files,read_csv,skip=1)
+colnames(temp_SiteC)
+names(temp_SiteC)[names(temp_SiteC) == "Date Time, GMT-04:00"] <- "DateTime"
+names(temp_SiteC)[names(temp_SiteC) == "Temp, Â°C (LGR S/N: 10511286, SEN S/N: 10511286)"] <- "Temperature"
+names(temp_SiteC)[names(temp_SiteC) == "Intensity, Lux (LGR S/N: 10511286, SEN S/N: 10511286)"] <- "Intensity"
+names(temp_SiteC)[names(temp_SiteC) == "Temp, Â°C (LGR S/N: 10869726, SEN S/N: 10869726)"] <- "Temperature1"
+names(temp_SiteC)[names(temp_SiteC) == "Temp, Â°C (LGR S/N: 10869725, SEN S/N: 10869725)"] <- "Temperature2"
+names(temp_SiteC)[names(temp_SiteC) == "Date Time, GMT-05:00"] <- "DateTime1"
+
+temp_SiteC <- temp_SiteC %>% mutate(as.factor)
+temp_SiteC <- temp_SiteC %>% mutate_if(is.na,"")
+temperature <- paste(temp_SiteC$Temperature,temp_SiteC$Temperature1,temp_SiteC$Temperature2)
+DateTime <- paste(temp_SiteC$DateTime,temp_SiteC$DateTime1)
+Intensity <- paste(temp_SiteC$Intensity)
+temp_SiteC <- data.frame(DateTime,temperature,Intensity)
+
+## Site D
+
+temp = list.files(path = "C:/Users/Dhwani/Documents/Site F G H/SiteD_Temp",pattern="*.csv")
+myfiles = lapply(temp, read.delim)
+files <- list.files(pattern = "*.csv")
+temp_SiteD <- ldply(files,read_csv,skip=1)
+colnames(temp_SiteD)
+names(temp_SiteD)[names(temp_SiteD) == "Date Time, GMT-04:00"] <- "DateTime"
+names(temp_SiteD)[names(temp_SiteD) == "Temp, Â°C (LGR S/N: 10511287, SEN S/N: 10511287)"] <- "Temperature"
+names(temp_SiteD)[names(temp_SiteD) == "Intensity, Lux (LGR S/N: 10511287, SEN S/N: 10511287)"] <- "Intensity"
+names(temp_SiteD)[names(temp_SiteD) == "Temp, Â°C (LGR S/N: 10869720, SEN S/N: 10869720)"] <- "Temperature1"
+names(temp_SiteD)[names(temp_SiteD) == "Date Time, GMT-05:00"] <- "DateTime1"
+
+temp_SiteD <- temp_SiteD %>% mutate(as.factor)
+temp_SiteD <- temp_SiteD %>% mutate_if(is.na,"")
+temperature <- paste(temp_SiteD$Temperature,temp_SiteD$Temperature1)
+DateTime <- paste(temp_SiteD$DateTime,temp_SiteD$DateTime1)
+Intensity <- paste(temp_SiteD$Intensity)
+temp_SiteD <- data.frame(DateTime,temperature,Intensity)
+
+
+## Site E
+files_E = list.files(path = "C:/Users/Dhwani/Documents/Site F G H/Site E", pattern = "*.csv", full.names = TRUE)
+
+datacsv_E= ldply(files_E,read.csv,header= FALSE)
+datacsv_E=datacsv_E[, !(colnames(datacsv_E) %in% c("V5","V6","V7","V8"))]
+datacsv_E=datacsv_E[(!duplicated(datacsv_E$V2)  & !grepl("Plot",datacsv_E$V1) & !grepl("#",datacsv_E$V1)),]
+colnames(datacsv_E)
+names(datacsv_E)[names(datacsv_E) == "V1"] <- "Seq"
+names(datacsv_E)[names(datacsv_E) == "V2"] <- "Date&Time"
+names(datacsv_E)[names(datacsv_E) == "V3"] <- "Temperature"
+names(datacsv_E)[names(datacsv_E) == "V4"] <- "Intensity"
+write.csv(datacsv_E, file = "MyData.csv")
+
+## Site F
+files_F = list.files(path = "C:/Users/Dhwani/Documents/Site F G H/Site F", pattern = "*.csv", full.names = TRUE)
+
+datacsv_F= ldply(files_F,read.csv,header= FALSE)
+datacsv_F=datacsv_F[, !(colnames(datacsv_F) %in% c("V5","V6","V7","V8"))]
+datacsv_F=datacsv_F[(!duplicated(datacsv_F$V2)  & !grepl("Plot",datacsv_F$V1) & !grepl("#",datacsv_F$V1)),]
+colnames(datacsv_F)
+names(datacsv_F)[names(datacsv_F) == "V1"] <- "Seq"
+names(datacsv_F)[names(datacsv_F) == "V2"] <- "Date&Time"
+names(datacsv_F)[names(datacsv_F) == "V3"] <- "Temperature"
+names(datacsv_F)[names(datacsv_F) == "V4"] <- "Intensity"
+
+## Site G
+files_G= list.files(path = "C:/Users/Dhwani/Documents/Site F G H/Site G", pattern = "*.csv", full.names = TRUE)
+
+datacsv_G= ldply(files_G,read.csv,header= FALSE)
+datacsv_G=datacsv_G[, !(colnames(datacsv_G) %in% c("V5","V6","V7","V8","V9"))]
+datacsv_G=datacsv_G[(!duplicated(datacsv_G$V2)  & !grepl("Plot",datacsv_G$V1) & !grepl("#",datacsv_G$V1)),]
+colnames(datacsv_G)
+names(datacsv_G)[names(datacsv_G) == "V1"] <- "Seq"
+names(datacsv_G)[names(datacsv_G) == "V2"] <- "Date&Time"
+names(datacsv_G)[names(datacsv_G) == "V3"] <- "Temperature"
+names(datacsv_G)[names(datacsv_G) == "V4"] <- "Intensity"
+
+
+
+## Site H
+files_H = list.files(path = "C:/Users/Dhwani/Documents/Site F G H/Site H", pattern = "*.csv", full.names = TRUE)
+
+datacsv_H= ldply(files_E,read.csv,header= FALSE)
+datacsv_H=datacsv_H[, !(colnames(datacsv_H) %in% c("V5","V6","V7","V8"))]
+datacsv_H=datacsv_H[(!duplicated(datacsv_H$V2)  & !grepl("Plot",datacsv_H$V1) & !grepl("#",datacsv_H$V1)),]
+colnames(datacsv_H)
+names(datacsv_H)[names(datacsv_H) == "V1"] <- "Seq"
+names(datacsv_H)[names(datacsv_H) == "V2"] <- "Date&Time"
+names(datacsv_H)[names(datacsv_H) == "V3"] <- "Temperature"
+names(datacsv_H)[names(datacsv_H) == "V4"] <- "Intensity"
+
+
+```
+
+## Contributorship Statement
+Josephine worked with site A,BC and D to check for missing values & Dhwani worked with site E,F,G,H to check for duplicates and bad values
