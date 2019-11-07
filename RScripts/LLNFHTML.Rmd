@@ -103,6 +103,8 @@ confusionMatrix(pheno_pred,test_set[[target_var]],positive=positive_class)
 roc(test_set[[target_var]],pheno_pred_prob[,positive_class],plot=TRUE,print.auc=TRUE,legacy.axes=TRUE)
 
 ```
+[Relevant Result is in SiteD.csv file](https://github.com/JosephineQiu/ISQA8086-Team1/blob/master/RScripts/SiteD.csv)
+
 
 #Site A
 ```{r setup, include=FALSE}
@@ -380,3 +382,6 @@ str(SiteD$Data_intensity.Observation_Date)
 write.csv(SiteD, file = "SiteH.csv")
 ```
 
+##ContributorShip Statement: Dhwani & Josephine worked on Rscript and Tanishk worked on trying to add Time series
+
+##Proofreading: Dhwani & Josephine did the proofreading.
