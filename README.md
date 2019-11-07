@@ -43,15 +43,15 @@
 | The contributorship statement                 | 30 oct     | 30 oct   | Team      |
 | Proof reading                                 | 31 oct     | 31 oct   | Josephine |
 
-## R Script
+## [R Script](https://github.com/JosephineQiu/ISQA8086-Team1/tree/master/RScripts)
 
 | Task                    | Start Date | Due Date | Assignee           | 
 |-------------------------|------------|----------|--------------------|
-| Descriptive Statistics  | Oct 27     | Oct 30   | Josephine          |                           
-| Regression Analysis     | Oct 31     | Nov 2    | Dhwani             |                           
+| Descriptive Statistics  | Oct 27     | Oct 30   | Dhwani          |                           
+| Regression Analysis     | Oct 31     | Nov 2    | Josephine             |                           
 | ANOVA                   | Nov 2      | Nov 4    | Tanishk            |                           
 | Proofreading            | Nov 2      | Nov 5    | Josephine & Dhwani |                           
-| Updates & Incorporation | Nov 5      | Nov 6    | Tanishk            |  
+| Updates & Incorporation | Nov 5      | Nov 6    | Dhwani            |  
 
 ## R Plots
 
