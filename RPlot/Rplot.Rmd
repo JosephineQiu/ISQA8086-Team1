@@ -1,0 +1,114 @@
+---
+title: "RPlots_assing"
+output: html_document
+Team: "Savants"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(readr)
+library(plyr)
+library(tidyr)
+library(tidyverse)
+library(caret)
+library(dplyr)
+library(doBy)
+library(stringr)
+library(lubridate)
+library(ggplot2)
+
+# Setting working directory
+tryCatch({
+  setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
+  }, error=function(cond){message(paste("cannot change working directory"))
+})
+```
+
+```{r}
+## Reading the soil temperature file
+
+datacsv <- read.csv("Site_A_Soil_Temp.csv",header=FALSE, stringsAsFactors=FALSE)
+datacsv = datacsv[, !(colnames(datacsv) %in% c("V4","V5","V6","V7","V8"))]
+datacsv = datacsv[(!duplicated(datacsv$V2)  & !grepl("Plot",datacsv$V1) & !grepl("#",datacsv$V1)),] # Removing the duplicate values and some bad values
+colnames(datacsv)
+names(datacsv)[names(datacsv) == "V1"] <- "Seq"
+names(datacsv)[names(datacsv) == "V2"] <- "Date&Time"
+names(datacsv)[names(datacsv) == "V3"] <- "Temperature" # Renaming the column names to sensible one
+
+datacsv$`Date&Time`= as.Date(datacsv$`Date&Time`, format = "%m/%d/%y") # converting Charcolumn to Date column
+
+datacsv$Temperature = as.numeric(datacsv$Temperature) # converting to numeric column
+
+cdata <- summaryBy(Temperature ~ datacsv$`Date&Time`, data=datacsv, FUN=c(min,max,mean),is.na=TRUE) # Calulate Min, Max, MEan Temperature
+
+
+Data_intensity <- read.csv("/Users/hitesh/Desktop/datasheet_1569537798494/status_intensity_observation_data.csv", header=TRUE, stringsAsFactors = FALSE)
+
+dint <- data.frame(Data_intensity$Observation_Date,Data_intensity$Site_Name,Data_intensity$Species,Data_intensity$Phenophase_Name,Data_intensity$Intensity_Value) # Taking Subset for required columns from Intensity Data 
+
+dint$Data_intensity.Observation_Date <- as.Date(dint$Data_intensity.Observation_Date) # converting to Date column
+
+dintA <- subset(dint,dint$Data_intensity.Site_Name=="Site A" & dint$Data_intensity.Phenophase_Name=="Breaking leaf buds")
+
+SiteASoil <- inner_join(dintA,cdata,by=c("Data_intensity.Observation_Date"="Date&Time") , is.na=TRUE) # using inner join to merge two dataset with common column "Observation date"
+
+
+# Creating plots for the mean soil temp on a tearly basis
+ggplot()+
+  geom_point(data=cdata,aes(x=cdata$`Date&Time`,y=cdata$Temperature.mean),color="Blue")+
+  ylab("Avg Soil Temperature in Celcius")+
+  xlab("Year")
+
+ggplot()+
+  geom_point(data=SiteASoil,aes(x=SiteASoil$Data_intensity.Observation_Date,y=SiteASoil$Temperature.mean),color="Blue")+
+  xlab("Timeline")+ ylab("Avg Soil Temp (Breaking Bud Leaf for Site A)")
+
+```
+
+For the above Rplot, we have taken two variables Average Soil Temperature and Date&Time. Avg Temperature is on Y axis as **Avg Temperature in Celcius** and Date$time is on X-axis as **Year**. As we can explian the variablity of Temperature across the years. Prediction of Temperature is useful to study about phenophases of plant species.
+
+Above Rplot suggested that Temperature in January is nearly about 5 Celcius and gradually increases from January 2017 to July - August 2017 and then Temperature again declining.
+
+
+---
+
+
+```{r}
+# PLOTTING TEMPERATURE DATA FILES
+
+#files <- list.files(path="temperature", pattern="*.csv", full.names=TRUE, recursive=FALSE)
+#files
+#for(file in files) {
+#  file <- ldply(file,read_csv)
+#  ggplot()+geom_point(data=file,aes(x=file$`Date&Time`,y=file$Temperature.mean),color="Blue")+ylab("Avg Air Temperature in Celcius")+xlab("Date")
+#}
+
+analyze <- function(filename) {
+  # Plots the average, min, and max inflammation over time.
+  # Input is character string of a csv file.
+  dataset <- read_csv(file = filename)
+  ggplot()+geom_point(data=dataset,aes(x=dataset$`Date&Time`,y=dataset$Temperature.mean),color="Blue")+ylab("Avg Air Temperature in Celcius")+xlab("Date")
+}
+
+analyze("siteA.csv")
+analyze("SiteB.csv")
+analyze("siteC.csv")
+analyze("SiteD.csv")
+analyze("siteE.csv")
+analyze("SiteF.csv")
+analyze("siteG.csv")
+analyze("SiteH.csv")
+
+```
+
+
+Above Rplot contains two variable Average Soil Temperature and Timeline for the Site A.
+This plot suggested that particular phenophase **Breaking bud leaf** happened mostly around June 2017 to Sept 2017 with the average Temperature above 10 celcius.
+
+Importance of this Plot: Dr Sarah Bois wanted o analyse the effects of Temperature on Phenophase **Breaking Bud Leaf**, so this Rplot will help them in their reaserch.
+
+Above plot is the answers for Research Question **_Effects of soil Temperature on Breaking bud leaf phenophase_**
+
+**_CONTRIBUTORSHIP STATEMENT_** : Dhwani and Menglin contributed to all R plots and Scripts.
+
+**_PROOFREADER STATEMENT_**: Ranga Tanishk Reddy did review and proofread the whole work to be submitted.
