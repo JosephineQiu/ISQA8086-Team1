@@ -1,0 +1,505 @@
+---
+title: "LLNF Final Script"
+output: html_document
+---
+#### This Document is updated version of Rscript and Rplots and changes have been made on the basis of feedbacks from the classmates. This document contains the Rplots which are the answers for Research Questions which we have identified.
+
+**Site D**
+```{r setup, include= TRUE, message=FALSE, warning=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(readr)
+library(plyr)
+library(tidyr)
+library(tidyverse)
+library(caret)
+library(dplyr)
+library(doBy)
+library(data.table)
+library(pROC)
+## Reading all the temperature files in the Site D folder
+
+files = list.files(path = "C:/Users/Dhwani/Documents/Site F G H/Site D", pattern = "*.csv", full.names = TRUE)
+datacsv = ldply(files,read.csv,header= FALSE)
+datacsv = datacsv[, !(colnames(datacsv) %in% c("V5","V6","V7","V8"))]
+## Removing the duplicates and unwanted rows from the csv file
+datacsv = datacsv[(!duplicated(datacsv$V2)  & !grepl("Plot",datacsv$V1) & !grepl("#",datacsv$V1)),]
+colnames(datacsv)
+## Assigning appropriate headers
+names(datacsv)[names(datacsv) == "V1"] <- "Seq"
+names(datacsv)[names(datacsv) == "V2"] <- "Date&Time"
+names(datacsv)[names(datacsv) == "V3"] <- "Temperature"
+names(datacsv)[names(datacsv) == "V4"] <- "Intensity"
+
+options(stringsAsFactors = FALSE)
+
+datacsv$`Date&Time`= as.Date(datacsv$`Date&Time`,format="%m/%d/%Y")
+
+datacsv$Temperature = as.numeric(datacsv$Temperature)
+
+cdata <- summaryBy(Temperature ~ datacsv$`Date&Time`, data=datacsv, FUN=c(min,max,mean),is.na=TRUE)
+
+## loading Intensity Dataset
+Data_intensity <- read.csv("C:/Users/Dhwani/Documents/status_intensity_observation_data.csv", header=TRUE)
+
+dint <- data.frame(Data_intensity$Observation_Date,Data_intensity$Site_Name,Data_intensity$Species,Data_intensity$Phenophase_Name,Data_intensity$Intensity_Value)
+
+dint$Data_intensity.Observation_Date <- as.Date(str_sub(dint$Data_intensity.Observation_Date,3))
+
+dintD <- subset(dint,dint$Data_intensity.Site_Name=="Site D")
+
+## Applying inner join to join two data set and result will contain phenophase data and Temperature data both
+SiteD <- inner_join(dintD,cdata,by=c("Data_intensity.Observation_Date"="Date&Time") ,copy=FALSE, is.na=TRUE)
+
+str(SiteD$Data_intensity.Observation_Date)
+
+write.csv(SiteD, file = "SiteD.csv")
+
+## Reading the finalized
+siteD <- read_csv("siteD.csv")
+## Summarize the Dataset
+summary(siteD)
+## From the summary we can see some mutation needed for pocessing the dataset
+siteD <- siteD %>% mutate_if(is.character,as.factor)
+siteD$Temperature.mean <- addNA(siteD$Temperature.mean,ifany=TRUE)
+summary(siteD)
+
+## Since we are interested in the relationship between temperature and breaking leaf buds, we are assigning 1 to
+## those that are having the breaking leave buds phenophase and 0 otherwise
+siteD$Data_intensity.Phenophase_Name <- ifelse(siteD$Data_intensity.Phenophase_Name=="Breaking leaf buds","Yes","No")
+siteD$Data_intensity.Phenophase_Name <- factor(siteD$Data_intensity.Phenophase_Name)
+setnames(siteD, old=c("Data_intensity.Phenophase_Name","Data_intensity.Species","Temperature.mean"), new=c("phenophase", "species","tempmean"))
+
+## Then we are going to divide the dataset to two parts - a training dataset and a test dataset(for validation) 
+## and develop a logistics regression model 
+## First,we are going to determine our target variable - phenophase
+
+trControl <- trainControl(method = 'cv', savePredictions = TRUE, classProbs = TRUE, summaryFunction = twoClassSummary)
+model_type <- 'glm'
+model_form <- phenophase ~  species+tempmean
+target_var <- 'phenophase'
+
+
+## we split the dataset as 80% and 20% to two parts - training set and testing set
+## We will use the first 80% of the dataset as the training data and the latter 20% of the dataset for validation
+set.seed(1)
+trainIndex <- createDataPartition(siteD[[target_var]], p = 0.8,list=FALSE)
+train_set <- siteD[trainIndex,]
+test_set <- siteD[-trainIndex,]
+
+
+## Now we are going to build a logistic regression model based on the training set
+lm_pheno <- train(as.formula(model_form),data=train_set,method=model_type,trControl=trControl)
+lm_pheno
+
+## Now we are going to perform the model on the test dataset and see how it works on predicting the phenophase for use
+## predicting the actual type
+pheno_pred <- lm_pheno %>% predict(newdata=test_set,type='raw')
+## predicting the probability
+pheno_pred_prob <- lm_pheno%>%predict(newdata=test_set,type='prob')
+
+##Let's have the confusion matrix to see how the model is working
+positive_class <- 'Yes'
+#confusionMatrix(pheno_pred,test_set[[target_var]],positive=positive_class)
+##Next, let's try to plot the roc curve to investigate the AUC value
+roc(test_set[[target_var]],pheno_pred_prob[,positive_class],plot=TRUE,print.auc=TRUE,legacy.axes=TRUE)
+
+```
+[Relevant Result is in SiteD.csv file](https://github.com/JosephineQiu/ISQA8086-Team1/blob/master/RScripts/SiteD.csv)
+
+
+**Site A**
+
+```{r  include= TRUE, message=FALSE, warning=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(readr)
+library(plyr)
+library(tidyr)
+library(tidyverse)
+library(caret)
+library(dplyr)
+library(doBy)
+library(data.table)
+library(pROC)
+library(viridis)
+
+files = list.files(path = "C:/Users/Dhwani/Documents/Site F G H/Site A", pattern = "*.csv", full.names = TRUE)
+
+datacsv = ldply(files,read.csv,header= FALSE, stringsAsFactors= FALSE)
+datacsv = datacsv[(!duplicated(datacsv$V2)  & !grepl("Plot",datacsv$V1) & !grepl("#",datacsv$V1)),] # Removing the duplicate values and some bad values
+colnames(datacsv)
+names(datacsv)[names(datacsv) == "V1"] <- "Seq"
+names(datacsv)[names(datacsv) == "V2"] <- "Date&Time"
+names(datacsv)[names(datacsv) == "V3"] <- "Temperature"
+names(datacsv)[names(datacsv) == "V4"] <- "Intensity"# Renaming the column names to sensible one
+datacsv$`Date&Time`= as.Date(datacsv$`Date&Time`, format = "%m/%d/%y") # converting Charcolumn to Date column
+datacsv$Temperature = as.numeric(datacsv$Temperature) # converting to numeric column
+cdata <- summaryBy(Temperature ~ datacsv$`Date&Time`, data=datacsv, FUN=c(min,max,mean),is.na=TRUE) # Calulate Min, Max, MEan Temperature
+```
+
+
+**Graph A**
+
+```{r  include= TRUE, message=FALSE, warning=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(ggplot2)
+ggplot()+
+  geom_point(data=cdata,aes(x=cdata$`Date&Time`,y=cdata$Temperature.mean),color="Blue")+
+  ylab("Avg Temperature in Celcius")+
+  xlab("Year")
+```
+
+**Above plot represents the variablity of Air temperature Acroos the 4 years. This graph is required because as per analysis from the dataset, we noticed that Temperature is the main factor which affects the Phenophases in shrubs.**
+
+
+
+```{r  include= TRUE, message=FALSE, warning=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+Data_intensity <- read.csv("C:/Users/Dhwani/Documents/status_intensity_observation_data.csv", header=TRUE)
+dint <- data.frame(Data_intensity$Observation_Date,Data_intensity$Day_of_Year,Data_intensity$Site_Name,Data_intensity$Species,Data_intensity$Phenophase_Name,Data_intensity$Intensity_Value)
+str(dint$Data_intensity.Observation_Date)
+dint$Data_intensity.Observation_Date <-as.Date(dint$Data_intensity.Observation_Date)
+#dint$Data_intensity.Day_of_Year <- as.factor(dint$Data_intensity.Day_of_Year)
+
+dintA <- subset(dint,  dint$Data_intensity.Site_Name=="Site A" & dint$Data_intensity.Phenophase_Name=="Breaking leaf buds" )
+#dint$Data_intensity.Site_Name=="Site A" & dint$Data_intensity.Phenophase_Name=="Breaking leaf buds"
+
+```
+
+
+**Graph B**
+
+```{r  include= TRUE, message=FALSE, warning=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+# Working: Species on site A and breaking Bud leag events
+
+ggplot(dint, aes(dint$Data_intensity.Observation_Date, dint$Data_intensity.Species))+
+  geom_point() +
+  xlab("Years")+
+  ylab("Species")+
+  labs("Phenophase Name")+
+    scale_color_viridis(discrete = TRUE, option = "D")+
+  scale_fill_viridis(discrete = TRUE) +
+  theme(legend.position="bottom")
+
+```
+
+
+**Above graph represents the Phenophase "Breaking bud leaf" across the years on the Site A. We can plot for another sites with the same script. From above graph we can conclude that Breaking bud leaf happened after April and stops before october.**
+
+
+
+
+**Graph C**
+```{r  include= TRUE, message=FALSE, warning=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+ ggplot(data = dintA, aes(dintA$Data_intensity.Day_of_Year,dintA$Data_intensity.Species,color=dintA$Data_intensity.Observation_Date)) + geom_point()+
+   theme(legend.position = "bottom")
+#p + facet_wrap(dintA$Data_intensity.Observation_Date ~ dintA$Data_intensity.Site_Name)
+```
+
+
+**Above graph represents the presence of Species over the years on the Site A. From this graph we can conclude that Species "Angustifolium" have been nutured only from the April to june and it will die after that every year.**
+
+
+
+
+**Graph D**
+```{r  include= TRUE, message=FALSE, warning=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+dintQ <- subset(dint,  dint$Data_intensity.Site_Name=="Site A"  )
+ggplot() +
+  geom_point(data=dintQ,aes(x=dintQ$Data_intensity.Day_of_Year, y=dintQ$Data_intensity.Phenophase_Name,color=dintQ$Data_intensity.Observation_Date)) +
+  facet_grid(dintQ$Data_intensity.Site_Name~.) +
+  labs(x="Day of Year",y="Phenophases",title="Phenophases") +
+   theme(legend.position="bottom")
+```
+
+
+**Above plot shows the All Phenophase for each species on the Site A over the years from 2015 to 2019. Lets take an example of "Egg" Phenophse this happened between day of the year 100- 280.**
+
+
+
+
+**Graph E**
+```{r  include= TRUE, message=FALSE, warning=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+#site A Phenophase
+dintA <- subset(dint,  dint$Data_intensity.Phenophase_Name=="Breaking leaf buds" )
+#dint$Data_intensity.Site_Name=="Site A" & dint$Data_intensity.Phenophase_Name=="Breaking leaf buds"
+str(dint$Data_intensity.Observation_Date)
+
+
+ggplot(dintA,aes(x=dintA$Data_intensity.Observation_Date, y=dintA$Data_intensity.Phenophase_Name, color=dintA$Data_intensity.Site_Name)) +
+  geom_point() +
+  facet_grid(dintA$Data_intensity.Site_Name~.) +
+  labs(x="Years",y="Breaking Bud leaf on all Sites",title="Phenophase on All sites") +
+  theme(legend.position="bottom")
+```
+
+**Above Graph represents the Breaking Bud leaf Phenophase on all the sites of all the species along the years. This phenophase is from 2015 to 2019**
+
+
+
+
+**Graph F**
+```{r  include= TRUE, message=FALSE, warning=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+#Phenophase and temp data
+dintA <- subset(dint,  dint$Data_intensity.Phenophase_Name=="Breaking leaf buds" & dint$Data_intensity.Intensity_Value!= -9999 )
+SiteA <- inner_join(dintA,cdata,by=c("Data_intensity.Observation_Date"="Date&Time") , is.na=TRUE)
+SiteA$Data_intensity.Observation_Date <-format( as.Date(SiteA$Data_intensity.Observation_Date),"%Y")
+
+ggplot(SiteA,aes(x=SiteA$Temperature.mean, y=SiteA$Data_intensity.Phenophase_Name, color=SiteA$Data_intensity.Intensity_Value)) +
+  geom_point() +
+  facet_wrap(SiteA$Data_intensity.Species~.) +
+  labs(x="Temperature",y="Breaking Bud Leaf",title="Phenophases as per Temperature") +
+  theme(legend.position="bottom")
+```
+
+**Above graph represents the intensity of Breaking Bud leaf for every species on Each site and on what temperature Breaking Bud Phenophase ocuured. From this graph we conclude that breaking bud leaf event occure whrn temperature range is from 10 to 25 degree celcius.**
+
+
+
+
+```{r include= FALSE }
+
+knitr::opts_chunk$set(echo= FALSE)
+
+#Above scripts has been written for sites B to H
+
+#Site B
+
+files = list.files(path = "C:/Users/Dhwani/Documents/Site F G H/Site B", pattern = "*.csv", full.names = TRUE)
+
+datacsv = ldply(files,read.csv,header= FALSE)
+datacsv = datacsv[, !(colnames(datacsv) %in% c("V5","V6","V7","V8"))]
+datacsv = datacsv[(!duplicated(datacsv$V2)  & !grepl("Plot",datacsv$V1) & !grepl("#",datacsv$V1)),]
+colnames(datacsv)
+names(datacsv)[names(datacsv) == "V1"] <- "Seq"
+names(datacsv)[names(datacsv) == "V2"] <- "Date&Time"
+names(datacsv)[names(datacsv) == "V3"] <- "Temperature"
+names(datacsv)[names(datacsv) == "V4"] <- "Intensity"
+
+options(stringsAsFactors = FALSE)
+
+datacsv$`Date&Time`= as.Date(datacsv$`Date&Time`,format="%m/%d/%Y")
+
+datacsv$Temperature = as.numeric(datacsv$Temperature)
+
+cdata <- summaryBy(Temperature ~ datacsv$`Date&Time`, data=datacsv, FUN=c(min,max,mean),is.na=TRUE)
+
+
+Data_intensity <- read.csv("C:/Users/Dhwani/Documents/status_intensity_observation_data.csv", header=TRUE)
+
+dint <- data.frame(Data_intensity$Observation_Date,Data_intensity$Site_Name,Data_intensity$Species,Data_intensity$Phenophase_Name,Data_intensity$Intensity_Value)
+
+dint$Data_intensity.Observation_Date <- as.Date(str_sub(dint$Data_intensity.Observation_Date,3))
+
+dintD <- subset(dint,dint$Data_intensity.Site_Name=="Site D")
+
+SiteB <- inner_join(dintD,cdata,by=c("Data_intensity.Observation_Date"="Date&Time") ,copy=FALSE, is.na=TRUE)
+
+str(SiteD$Data_intensity.Observation_Date)
+
+write.csv(SiteD, file = "SiteB.csv")
+
+
+
+
+#Site C
+
+
+files = list.files(path = "C:/Users/Dhwani/Documents/Site F G H/Site C", pattern = "*.csv", full.names = TRUE)
+
+datacsv = ldply(files,read.csv,header= FALSE)
+datacsv = datacsv[, !(colnames(datacsv) %in% c("V5","V6","V7","V8"))]
+datacsv = datacsv[(!duplicated(datacsv$V2)  & !grepl("Plot",datacsv$V1) & !grepl("#",datacsv$V1)),]
+colnames(datacsv)
+names(datacsv)[names(datacsv) == "V1"] <- "Seq"
+names(datacsv)[names(datacsv) == "V2"] <- "Date&Time"
+names(datacsv)[names(datacsv) == "V3"] <- "Temperature"
+names(datacsv)[names(datacsv) == "V4"] <- "Intensity"
+
+options(stringsAsFactors = FALSE)
+
+datacsv$`Date&Time`= as.Date(datacsv$`Date&Time`,format="%m/%d/%Y")
+
+datacsv$Temperature = as.numeric(datacsv$Temperature)
+
+cdata <- summaryBy(Temperature ~ datacsv$`Date&Time`, data=datacsv, FUN=c(min,max,mean),is.na=TRUE)
+
+
+Data_intensity <- read.csv("C:/Users/Dhwani/Documents/status_intensity_observation_data.csv", header=TRUE)
+
+dint <- data.frame(Data_intensity$Observation_Date,Data_intensity$Site_Name,Data_intensity$Species,Data_intensity$Phenophase_Name,Data_intensity$Intensity_Value)
+
+dint$Data_intensity.Observation_Date <- as.Date(str_sub(dint$Data_intensity.Observation_Date,3))
+
+dintD <- subset(dint,dint$Data_intensity.Site_Name=="Site D")
+
+SiteC <- inner_join(dintD,cdata,by=c("Data_intensity.Observation_Date"="Date&Time") ,copy=FALSE, is.na=TRUE)
+
+str(SiteD$Data_intensity.Observation_Date)
+
+write.csv(SiteC, file = "SiteA.csv")
+
+
+#Site E
+
+
+files = list.files(path = "C:/Users/Dhwani/Documents/Site F G H/Site E", pattern = "*.csv", full.names = TRUE)
+
+datacsv = ldply(files,read.csv,header= FALSE)
+datacsv = datacsv[, !(colnames(datacsv) %in% c("V5","V6","V7","V8"))]
+datacsv = datacsv[(!duplicated(datacsv$V2)  & !grepl("Plot",datacsv$V1) & !grepl("#",datacsv$V1)),]
+colnames(datacsv)
+names(datacsv)[names(datacsv) == "V1"] <- "Seq"
+names(datacsv)[names(datacsv) == "V2"] <- "Date&Time"
+names(datacsv)[names(datacsv) == "V3"] <- "Temperature"
+names(datacsv)[names(datacsv) == "V4"] <- "Intensity"
+
+options(stringsAsFactors = FALSE)
+
+datacsv$`Date&Time`= as.Date(datacsv$`Date&Time`,format="%m/%d/%Y")
+
+datacsv$Temperature = as.numeric(datacsv$Temperature)
+
+cdata <- summaryBy(Temperature ~ datacsv$`Date&Time`, data=datacsv, FUN=c(min,max,mean),is.na=TRUE)
+
+
+Data_intensity <- read.csv("C:/Users/Dhwani/Documents/status_intensity_observation_data.csv", header=TRUE)
+
+dint <- data.frame(Data_intensity$Observation_Date,Data_intensity$Site_Name,Data_intensity$Species,Data_intensity$Phenophase_Name,Data_intensity$Intensity_Value)
+
+dint$Data_intensity.Observation_Date <- as.Date(str_sub(dint$Data_intensity.Observation_Date,3))
+
+dintD <- subset(dint,dint$Data_intensity.Site_Name=="Site D")
+
+SiteE <- inner_join(dintD,cdata,by=c("Data_intensity.Observation_Date"="Date&Time") ,copy=FALSE, is.na=TRUE)
+
+str(SiteD$Data_intensity.Observation_Date)
+
+write.csv(SiteE, file = "SiteA.csv")
+
+
+#Site F
+
+
+files = list.files(path = "C:/Users/Dhwani/Documents/Site F G H/Site F", pattern = "*.csv", full.names = TRUE)
+
+datacsv = ldply(files,read.csv,header= FALSE)
+datacsv = datacsv[, !(colnames(datacsv) %in% c("V5","V6","V7","V8"))]
+datacsv = datacsv[(!duplicated(datacsv$V2)  & !grepl("Plot",datacsv$V1) & !grepl("#",datacsv$V1)),]
+colnames(datacsv)
+names(datacsv)[names(datacsv) == "V1"] <- "Seq"
+names(datacsv)[names(datacsv) == "V2"] <- "Date&Time"
+names(datacsv)[names(datacsv) == "V3"] <- "Temperature"
+names(datacsv)[names(datacsv) == "V4"] <- "Intensity"
+
+options(stringsAsFactors = FALSE)
+
+datacsv$`Date&Time`= as.Date(datacsv$`Date&Time`,format="%m/%d/%Y")
+
+datacsv$Temperature = as.numeric(datacsv$Temperature)
+
+cdata <- summaryBy(Temperature ~ datacsv$`Date&Time`, data=datacsv, FUN=c(min,max,mean),is.na=TRUE)
+
+
+Data_intensity <- read.csv("C:/Users/Dhwani/Documents/status_intensity_observation_data.csv", header=TRUE)
+
+dint <- data.frame(Data_intensity$Observation_Date,Data_intensity$Site_Name,Data_intensity$Species,Data_intensity$Phenophase_Name,Data_intensity$Intensity_Value)
+
+dint$Data_intensity.Observation_Date <- as.Date(str_sub(dint$Data_intensity.Observation_Date,3))
+
+dintD <- subset(dint,dint$Data_intensity.Site_Name=="Site D")
+
+SiteF <- inner_join(dintD,cdata,by=c("Data_intensity.Observation_Date"="Date&Time") ,copy=FALSE, is.na=TRUE)
+
+str(SiteD$Data_intensity.Observation_Date)
+
+write.csv(SiteF, file = "SiteA.csv")
+
+#Site G
+
+
+files = list.files(path = "C:/Users/Dhwani/Documents/Site F G H/Site G", pattern = "*.csv", full.names = TRUE)
+
+datacsv = ldply(files,read.csv,header= FALSE)
+datacsv = datacsv[, !(colnames(datacsv) %in% c("V5","V6","V7","V8"))]
+datacsv = datacsv[(!duplicated(datacsv$V2)  & !grepl("Plot",datacsv$V1) & !grepl("#",datacsv$V1)),]
+colnames(datacsv)
+names(datacsv)[names(datacsv) == "V1"] <- "Seq"
+names(datacsv)[names(datacsv) == "V2"] <- "Date&Time"
+names(datacsv)[names(datacsv) == "V3"] <- "Temperature"
+names(datacsv)[names(datacsv) == "V4"] <- "Intensity"
+
+options(stringsAsFactors = FALSE)
+
+datacsv$`Date&Time`= as.Date(datacsv$`Date&Time`,format="%m/%d/%Y")
+
+datacsv$Temperature = as.numeric(datacsv$Temperature)
+
+cdata <- summaryBy(Temperature ~ datacsv$`Date&Time`, data=datacsv, FUN=c(min,max,mean),is.na=TRUE)
+
+
+Data_intensity <- read.csv("C:/Users/Dhwani/Documents/status_intensity_observation_data.csv", header=TRUE)
+
+dint <- data.frame(Data_intensity$Observation_Date,Data_intensity$Site_Name,Data_intensity$Species,Data_intensity$Phenophase_Name,Data_intensity$Intensity_Value)
+
+dint$Data_intensity.Observation_Date <- as.Date(str_sub(dint$Data_intensity.Observation_Date,3))
+
+dintD <- subset(dint,dint$Data_intensity.Site_Name=="Site D")
+
+SiteG <- inner_join(dintD,cdata,by=c("Data_intensity.Observation_Date"="Date&Time") ,copy=FALSE, is.na=TRUE)
+
+str(SiteD$Data_intensity.Observation_Date)
+
+write.csv(SiteD, file = "SiteG.csv")
+
+
+#Site H
+
+
+files = list.files(path = "C:/Users/Dhwani/Documents/Site F G H/Site H", pattern = "*.csv", full.names = TRUE)
+
+datacsv = ldply(files,read.csv,header= FALSE)
+datacsv = datacsv[, !(colnames(datacsv) %in% c("V5","V6","V7","V8"))]
+datacsv = datacsv[(!duplicated(datacsv$V2)  & !grepl("Plot",datacsv$V1) & !grepl("#",datacsv$V1)),]
+colnames(datacsv)
+names(datacsv)[names(datacsv) == "V1"] <- "Seq"
+names(datacsv)[names(datacsv) == "V2"] <- "Date&Time"
+names(datacsv)[names(datacsv) == "V3"] <- "Temperature"
+names(datacsv)[names(datacsv) == "V4"] <- "Intensity"
+
+options(stringsAsFactors = FALSE)
+
+datacsv$`Date&Time`= as.Date(datacsv$`Date&Time`,format="%m/%d/%Y")
+
+datacsv$Temperature = as.numeric(datacsv$Temperature)
+
+cdata <- summaryBy(Temperature ~ datacsv$`Date&Time`, data=datacsv, FUN=c(min,max,mean),is.na=TRUE)
+
+
+Data_intensity <- read.csv("C:/Users/Dhwani/Documents/status_intensity_observation_data.csv", header=TRUE)
+
+dint <- data.frame(Data_intensity$Observation_Date,Data_intensity$Site_Name,Data_intensity$Species,Data_intensity$Phenophase_Name,Data_intensity$Intensity_Value)
+
+dint$Data_intensity.Observation_Date <- as.Date(str_sub(dint$Data_intensity.Observation_Date,3))
+
+dintD <- subset(dint,dint$Data_intensity.Site_Name=="Site D")
+
+SiteH <- inner_join(dintD,cdata,by=c("Data_intensity.Observation_Date"="Date&Time") ,copy=FALSE, is.na=TRUE)
+
+str(SiteD$Data_intensity.Observation_Date)
+
+write.csv(SiteD, file = "SiteH.csv")
+```
+
+
+**_ContributorShip Statement: Dhwani updated the Rscript and plot some extra plots for more analysis_**
+
+**_Proofreading: Tanishk did the proofreading._**
