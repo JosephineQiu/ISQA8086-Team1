@@ -1,3 +1,6 @@
+ 
+<img src="https://github.com/JosephineQiu/ISQA8086-Team1/blob/master/Final_Github_package_LLNF/LLNFLogoOneColorWeb.jpg" width=200px />
+
 # Linda Loring Nature's Foundation Project
 
 ### Team **"SAVANTS"**
@@ -19,4 +22,7 @@
 
 ## License Information
 RStudio is available under the [GNU Affero General Public License v3](http://www.gnu.org/licenses/agpl-3.0-standalone.html).
+
+
 ---
+**_Proofreaders Statement: Tanishk and Menglin did the Proofreading_**
