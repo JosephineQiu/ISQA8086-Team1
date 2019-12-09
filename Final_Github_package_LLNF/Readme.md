@@ -1,0 +1,22 @@
+# Linda Loring Nature's Foundation Project
+
+### Team **"SAVANTS"**
+* **_Dhwani Kumrawat_**
+* **_Josephine Menglin_**
+* **_Tanishk Reddy_**
+
+#### This Readme file contains the brief descripion about contents of the Final GitHub Package and the license information which we have used to create Final R script for LLNF project.
+
+**Below are the Contents of Final Github Package**
+
+#### 1) HTML Document with overview of Rscript and Rplots for LLNF as **LLNF_script.html** file.
+#### 2) Comprehensive analysis and Full script to create RPlots as **LLNF_script.Rmd** file.
+#### 3) Updated Audience Profile as **AudienceProfile.md**.
+#### 4) HTML Document contains summary about Research analysis, Answers to research questions, Rplots form analysis, Interpretation of plots, Decisions should make on the basis od analysis .
+#### 5) Presentation slides in PDF.
+#### 6) Member's Contribution towards the final project as Contributorship.md file.
+---
+
+## License Information
+RStudio is available under the [GNU Affero General Public License v3](http://www.gnu.org/licenses/agpl-3.0-standalone.html).
+---
