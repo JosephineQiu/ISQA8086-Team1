@@ -17,7 +17,7 @@
 #### 3) Updated Audience Profile as [AudienceProfile.md](https://github.com/JosephineQiu/ISQA8086-Team1/blob/master/Final_Github_package_LLNF/UpdatedAudienceProfile.md).
 #### 4) HTML Document contains summary about Research analysis, Answers to research questions, Rplots form analysis, Interpretation of plots, Decisions should make on the basis od analysis .
 #### 5) Presentation slides in PDF.
-#### 6) Member's Contribution towards the final project as Contributorship.md file.
+#### 6) Member's Contribution towards the final project as [Contributorship.md](https://github.com/JosephineQiu/ISQA8086-Team1/blob/master/Final_Github_package_LLNF/Contributorship.md) file.
 ---
 
 ## License Information
