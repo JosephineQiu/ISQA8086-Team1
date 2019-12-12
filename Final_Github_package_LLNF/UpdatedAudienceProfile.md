@@ -1,6 +1,9 @@
 # Name of Organization
+<img src="https://github.com/JosephineQiu/ISQA8086-Team1/blob/master/Final_Github_package_LLNF/LLNFLogoOneColorWeb.jpg" width=150px />
+
 ## Linda Loring Nature Foundation(LLNF)
- 
+
+#### The Point of contact for this Project is Dr. Sarah T. Bois. She is Director of Research and Education at Linda Loring Nature Foundation,  Nantucket, Massachusetts. She has Doctor of Philosophy(Phd) in Ecology and Evolutionary Biology 
 
 # Sociodemographics
 ## Training & education
@@ -63,6 +66,7 @@ The analysis that we conduct on the temperature and plants will benefit LLNF in 
 * Nantucket Today. (n.d.). Retrieved from https://nantuckettodayonline.com/archives/a-prize-worth-protecting.
 * The Inquirer and Mirror. (2017, July 18). Community Foundation's Nantucket Fund awards $160,475 in grants. Retrieved from https://www.ack.net/news/20170718/community-foundations-nantucket-fund-awards-160475-in-grants.
 * The Inquirer and Mirror. (2019, April 6). Linda Loring Foundation receives invasive-species grant. Retrieved from https://www.ack.net/news/20190404/linda-loring-foundation-receives-invasive-species-grant.
+* Details on Dr Sarah T. Bois . Retrieved from https://www.linkedin.com/in/sarah-bois-980a038
 
 # Contributorship Statement
 _Menglin Qiu_, _Dhwani Kumrawat_ and _Ranga Reddy_ have worked collectively to generate the documentation of this documentation.
