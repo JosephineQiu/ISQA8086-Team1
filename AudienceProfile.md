@@ -1,5 +1,6 @@
 # Name of Organization
 ## Linda Loring Nature Foundation(LLNF)
+ 
 
 # Sociodemographics
 ## Training & education
@@ -14,9 +15,8 @@ Data literacy means the ability to work with and understand data. (“Data Liter
 
 # Goals of Organization
 ## Organization values/mission
-Linda Loring Nature Foundation is a non-profit organization located at Nantucket. This organization got his values from **Linda Loring** who was an advocate and conservationist. Her objective to establish this foundation was to create a nature centre at Nantucket.
+Linda Loring Nature Foundation(LLNF) holdes the mission as it states on the website, “the Linda Loring Nature Foundation is dedicated to preserving and protecting Nantucket's biologically diverse ecosystems. The Foundation's property, a living laboratory for research and education, advances broad community support and environmental understanding to respect the fragile habitats surrounding us”. (“Linda Loring Nature Foundation Mission,” n.d.) LLNF has been striving to observe the growth of the species and sustain the diversity of the biological ecosystems. Therefore, the organization needs not only raise different species but also closely monitor and analyze the factors that could influence the growth of the species.  In addition, LLNF also strives to enhance public understanding of the natural environment by serving as a living lab for research and education. It enables people from different scientific fields to benefit from their resources.Linda Loring Nature Foundation is a non-profit organization located at Nantucket. This organization got his values from **Linda Loring** who was an advocate and conservationist. Her objective to establish this foundation was to create a nature centre at Nantucket.
 The mission of **Linda Loring & LLNF** is education, staff work to connect people of all ages and background to nature and plays a vital role in the community of Nantucket. This foundation is mainly focused on three main areas of work: **Ecological Research, Environmental Education, and Land Stewardship**(“Linda Loring Nature Foundation”, n.d.). LLNF helps in preserving and protecting the biological environment of Nantucket which is very diverse.
- and also educate people to respect the fragile habitats surrounding them.
  
 ## Expectations, benefits of LLNF Organization
 Linda Loring Nature Foundation has been established to preserve and protect the natural world on the Nantucket and educate people about how they can protect the surrounding fragile habitats.
@@ -50,6 +50,9 @@ LLNF holds very basic organizational structure with limited officers and thrive 
 
 ## Business model
 "Businees model being a  design for successful operation of a business and specification describing how an organization fulfills its purpose", LLNF being a Non-profit Organization, its major source of revenue is contributions from different fund raisers and dividends. LLNF strive to acquire more land to direct surroundings to prosper and motives of conservation and therefore earns no profit using land as an asset. Notable expenses include charitable disbursements and compensation of officers.   (Rouse, M., Rouse, M., & Rouse, M. (n.d.))       (Tigas, M., Wei, S., Schwencke, K., & Glassford, A. (2013, May 9))
+
+## Summary
+The analysis that we conduct on the temperature and plants will benefit LLNF in terms of education and long-term management of the plants. By identifying the patterns of temperature changs and the corresponding influences of them on the phenophase of the plants, we hope that our audience will gain some ideas on their future strategies on plant management and planning. 
 
 # References
 * Linda Loring Nature Foundation Mission. (n.d.). Linda Loring Nature Foundation. Retrieved from https://llnf.org/mission
