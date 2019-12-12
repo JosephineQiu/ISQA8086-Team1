@@ -12,9 +12,9 @@
 
 **Below are the Contents of Final Github Package**
 
-#### 1) HTML Document with overview of Rscript and Rplots for LLNF as **LLNF_script.html** file.
-#### 2) Comprehensive analysis and Full script to create RPlots as **LLNF_script.Rmd** file.
-#### 3) Updated Audience Profile as **AudienceProfile.md**.
+#### 1) HTML Document with overview of Rscript and Rplots for LLNF as [LLNF_script.html](https://github.com/JosephineQiu/ISQA8086-Team1/blob/master/Final_Github_package_LLNF/LLNF_Script.html) file.
+#### 2) Comprehensive analysis and Full script to create RPlots as [LLNF_script.Rmd](https://github.com/JosephineQiu/ISQA8086-Team1/blob/master/Final_Github_package_LLNF/LLNF_Script.Rmd) file.
+#### 3) Updated Audience Profile as [AudienceProfile.md](https://github.com/JosephineQiu/ISQA8086-Team1/blob/master/Final_Github_package_LLNF/UpdatedAudienceProfile.md).
 #### 4) HTML Document contains summary about Research analysis, Answers to research questions, Rplots form analysis, Interpretation of plots, Decisions should make on the basis od analysis .
 #### 5) Presentation slides in PDF.
 #### 6) Member's Contribution towards the final project as Contributorship.md file.
