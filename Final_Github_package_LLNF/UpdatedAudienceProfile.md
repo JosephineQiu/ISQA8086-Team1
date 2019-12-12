@@ -68,4 +68,4 @@ The analysis that we conduct on the temperature and plants will benefit LLNF in 
 _Menglin Qiu_, _Dhwani Kumrawat_ and _Ranga Reddy_ have worked collectively to generate the documentation of this documentation.
 
 # Proofreader Signoff
-The above contents are reviewed and confirmed by _Ranga Reddy_  .
+The above contents are reviewed and confirmed by _Menglin Qiu_  .
