@@ -1,9 +1,11 @@
 # Name of Organization
 <img src="https://github.com/JosephineQiu/ISQA8086-Team1/blob/master/Final_Github_package_LLNF/LLNFLogoOneColorWeb.jpg" width=150px />
 
-## Linda Loring Nature Foundation(LLNF)
+### Linda Loring Nature Foundation(LLNF)
 
-#### The Point of contact for this Project is Dr. Sarah T. Bois. She is Director of Research and Education at Linda Loring Nature Foundation,  Nantucket, Massachusetts. She has Doctor of Philosophy(Phd) in Ecology and Evolutionary Biology 
+#### The Point of contact for this Project is Dr. Sarah T. Bois. She is Director of Research and Education at Linda Loring Nature Foundation,  Nantucket, Massachusetts. She has Doctor of Philosophy(Phd) in Ecology and Evolutionary Biology .
+
+---
 
 # Sociodemographics
 ## Training & education
