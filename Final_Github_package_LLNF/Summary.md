@@ -46,4 +46,8 @@ About the data collection process, we would give the following recommendations:
 * During cleaning the data, we noticed that many Intensity values are -9999 which doesn’t make any sense.
 * There are some missing values so instead of keep them as it is, try to replace with “NA”.
 * Dataset we have used for phenophases and intensity values, it doesn’t have Temperature data, it should be more convenient to plot the data if Temperature values are there of everyday
-                                                                                                                                                                                                                                                                                                                                                                                 
+                  
+# REFERENCES
+Linda Loring Nature Foundation Mission. (n.d.). Linda Loring Nature Foundation. Retrieved from https://llnf.org/mission
+Data Literacy. (n.d.). Renaissance. Retrieved from https://www.renaissance.com/edwords/data-literacy/
+Linda Loring Nature Foundation. (2019, August 15). Retrieved from https://fishernantucket.com/linda-loring-nature-foundation.                                                                                                                                                                                                                                                                                                                                                                                 
