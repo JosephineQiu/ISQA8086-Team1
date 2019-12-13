@@ -9,7 +9,7 @@ We made it sure while analyzing the data that we have minimum number of bad data
 Based on the analysis on our previous sessions, we've had the following interpretation:
 ## Plot 1: Soil Temperature change Over Years:
 ![soil temperature](time_soiltemp.png)
-This graph represents the ow Soil Temperature affects the Breaking bud phenophase. As we can conclude from this graph that Breaking bud happened around Apr to July and  Average Temperature is above 5 degree celsius.
+As the soil temperature data that we've obtained have pretty limited statistics, we've chosen to study for only the year 2017 to have a basic idea about the changes on temperature of that year. As we can tell from the plot, there are specific outliers on the soil temperature dataset, and the highest temperature takes place in July of the year. There is no specifically surprising phenomenon on the changes of soil temperature. This graph represents the ow Soil Temperature affects the Breaking leave buds phenophase. As we can conclude from this graph that Breaking bud happened around Apr to July and  Average Temperature is above 5 degree celsius. 
 
 ## Plot 2: Presence of Species In a Year:
 ![species_presence](Species_Year.png)
@@ -26,4 +26,6 @@ This graph represents the presence of Breaking leaf bud phenophase over the year
 
 # Recommendations
 Based on the analysis that we have from the above, we would like to make the following recommendations:
-* 
+* In order to maintain diversity, it is important to predict the temperature changes in the future as it appears that all species react similarly to the change of temperature.
+* Specific to breaking leave buds, it seems that this phenophase happens almost 2/3 of the whole year. Although all species have reactions to the change of temperature, it is important to keep in mind that there might be different dominant phenophases happening to different species. 
+* Soil temperature reaches the peak in July every year and this might be specifically important to the presence of certain phenophases. Therefore, when it comes to July every year, we need to keep track of the highest temperature and set up alarm for extremely high temperature.
