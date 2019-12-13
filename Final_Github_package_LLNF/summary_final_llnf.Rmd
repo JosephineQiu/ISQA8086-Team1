@@ -17,20 +17,25 @@ Overview Summary
 Based on the analysis on our previous sessions, we've had the following interpretation:
 
 Plot 1: Soil Temperature change Over Years:
+![Ecoli](https://github.com/JosephineQiu/ISQA8086-Team1/blob/master/Final_Github_package_LLNF/time_soiltemp.png)
 soil temperature As the soil temperature data that we've obtained have pretty limited statistics, we've chosen to study for only the year 2017 to have a basic idea about the changes on temperature of that year. As we can tell from the plot, there are specific outliers on the soil temperature dataset, and the highest temperature takes place in July of the year. There is no specifically surprising phenomenon on the changes of soil temperature. This graph represents the ow Soil Temperature affects the Breaking leave buds phenophase. As we can conclude from this graph that Breaking bud happened around Apr to July and Average Temperature is above 5 degree celsius.
 
 Plot 2: Presence of Species In a Year:
+![Ecoli](https://github.com/JosephineQiu/ISQA8086-Team1/blob/master/Final_Github_package_LLNF/Species_Year.png)
 species_presence This graph represents the Phenophase "Breaking bud leaf" for each species across the years on the Site A. We can plot for another sites with the same script. From the above graph we can conclude that breaking leave buds happens after April and stops around october. As it stays almost the same for all the species that we've plotted here, we would assume that it is possible for us to keep an appropriate to attain the healthy growth of all species. The growth pattern of breaking leave buds basically has two different categories:
 
 The first category of species includes species such as Serotina that has breaking leave buds starting from around April and ending in around October. During that time period they have breaking leave buds continuously without stopping.
 The second category of species includes species such as Baccata that has breaking leave buds starting from around April and ending in around July. After stopping having their breaking leave buds phenophase for around two months or so, breaking leave buds re-occurs in around August and ends in October.
 Plot 3: Relationship between Temperature and Phenophase:
+![Ecoli](https://github.com/JosephineQiu/ISQA8086-Team1/blob/master/Final_Github_package_LLNF/phenophase_vs_temp.png)
 phenophase_vs_temperature This graph represents the intensity of Breaking Bud leaf for every species on Each site and on what temperature Breaking Bud Phenophase occurred. From this graph we conclude that breaking bud leaf event occurs when temperature range is from 10 to 25 Celsius degrees. There are several outliers indicating that breaking leave buds takes place when the temperature is above 25 Celsius degrees. It might be interesting to further investigate into those outliers as well to figure out if there are any other factors affecting the presence of breaking leave buds in spite of the high temperature.
 
-Plot 4: Presence of Breaking Leave Buds Periods;
+Plot 4: Presence of Breaking Leave Buds Periods:
+![Ecoli](https://github.com/JosephineQiu/ISQA8086-Team1/blob/master/Final_Github_package_LLNF/blb_dayofyear.png)
 breaking_leave_buds_days This graph represents the presence of Breaking leaf bud phenophase over the years on each site. From this graph we can conclude that Breaking Leaf Bud phenophase started around 90th day of the year that is March Ending and occured till the 300th day, which is around the end of October. But it is showing a trend of shorter time period for breaking leave buds to last from 2014 to 2019.
 
 Plot 5: Occurance of all Phenophases in a Year:
+![Ecoli](https://github.com/JosephineQiu/ISQA8086-Team1/blob/master/Final_Github_package_LLNF/all_phenophase_dayoftear.png)
 all_phenophases_year This plot shows the All Phenophase for each species on the Site A over the years from 2015 to 2019. In the example of "Egg" Phenophase, it happens between day 100- 280 of the year. Also from this graph we can more clearly tell that all phenophases happen almost the same time in the same pattern every year. The graph also indicates that in the year 2019 there are some outliers for every phenophase as they happened outside of the usual range of days compared to the past years. This might be something worth investigating to see what factors are likely to influence the occurence of these phenophases.
 
 Recommendations
