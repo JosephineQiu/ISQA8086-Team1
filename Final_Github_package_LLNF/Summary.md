@@ -13,7 +13,9 @@ As the soil temperature data that we've obtained have pretty limited statistics,
 
 ## Plot 2: Presence of Species In a Year:
 ![species_presence](Species_Year.png)
-This graph represents the Phenophase "Breaking bud leaf" for each species across the years on the Site A. We can plot for another sites with the same script. From above graph we can conclude that Breaking bud leaf happened after April and stops around october. As it stays almost the same for all the species that we've plotted here, we would assume that it is possible for us to keep an appropriate to attain the healthy growth of all species.
+This graph represents the Phenophase "Breaking bud leaf" for each species across the years on the Site A. We can plot for another sites with the same script. From the above graph we can conclude that breaking leave buds happens after April and stops around october. As it stays almost the same for all the species that we've plotted here, we would assume that it is possible for us to keep an appropriate to attain the healthy growth of all species. The growth pattern of breaking leave buds basically has two different categories:
+* The first category of species includes species such as Serotina that has breaking leave buds starting from around April and ending in around October. During that time period they have breaking leave buds continuously without stopping.
+* The second category of species includes species such as Baccata that has breaking leave buds starting from around April and ending in around July. After stopping having their breaking leave buds phenophase for around two months or so, breaking leave buds re-occurs in around August and ends in October.
 
 ## Plot 3: Relationship between Temperature and Phenophase:
 ![phenophase_vs_temperature](phenophase_vs_temp.png)
@@ -29,3 +31,8 @@ Based on the analysis that we have from the above, we would like to make the fol
 * In order to maintain diversity, it is important to predict the temperature changes in the future as it appears that all species react similarly to the change of temperature.
 * Specific to breaking leave buds, it seems that this phenophase happens almost 2/3 of the whole year. Although all species have reactions to the change of temperature, it is important to keep in mind that there might be different dominant phenophases happening to different species. 
 * Soil temperature reaches the peak in July every year and this might be specifically important to the presence of certain phenophases. Therefore, when it comes to July every year, we need to keep track of the highest temperature and set up alarm for extremely high temperature.
+About the data collection process, we would give the following recommendations:
+* Try to keep the name of the columns short and understandable.
+* During cleaning the data, we noticed that many Intensity values are -9999 which doesn’t make any sense.
+* There are some missing values so instead of keep them as it is, try to replace with “NA”.
+* Dataset we have used for phenophases and intensity values, it doesn’t have Temperature data, it should be more convenient to plot the data if Temperature values are there of everyday
