@@ -6,3 +6,24 @@ Data being recorded since long by concerned people was provided to us to study u
 We made it sure while analyzing the data that we have minimum number of bad data cells which could hinder the accuracy of our research. We had many options to work towards the data cleaning but and we thought of eliminating the need to fill blank data with our assumptions and hence removed the rows related to those. 
 
 # Overview Summary
+Based on the analysis on our previous sessions, we've had the following interpretation:
+## Plot 1: Soil Temperature change Over Years:
+![soil temperature](time_soiltemp.png)
+This graph represents the ow Soil Temperature affects the Breaking bud phenophase. As we can conclude from this graph that Breaking bud happened around Apr to July and  Average Temperature is above 5 degree celsius.
+
+## Plot 2: Presence of Species In a Year:
+![species_presence](Species_Year.png)
+This graph represents the Phenophase "Breaking bud leaf" for each species across the years on the Site A. We can plot for another sites with the same script. From above graph we can conclude that Breaking bud leaf happened after April and stops around october. As it stays almost the same for all the species that we've plotted here, we would assume that it is possible for us to keep an appropriate to attain the healthy growth of all species.
+
+## Plot 3: Relationship between Temperature and Phenophase:
+![phenophase_vs_temperature](phenophase_vs_temp.png)
+This graph represents the intensity of Breaking Bud leaf for every species on Each site and on what temperature Breaking Bud Phenophase occurred. From this graph we conclude that breaking bud leaf event occurs when temperature range is from 10 to 25 degree celsius.
+
+## Plot 4: Presence of Breaking Leave Buds Periods;
+![breaking_leave_buds_days](blb_dayofyear.png)
+This graph represents the presence of Breaking leaf bud phenophase over the years on the each site. From this graph we can conclude that Breaking Leaf Bud phenophase started around 90th day of the year that is March Ending and occured till 300th day that is around october ending
+
+
+# Recommendations
+Based on the analysis that we have from the above, we would like to make the following recommendations:
+* 
